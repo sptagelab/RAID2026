@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>RAID 2024 – The 27th International Symposium on Research in Attacks, Intrusions and Defenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+  <style>
+ body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 27px;
+      text-transform: none;
+      color: #303030;
+      align-items: center;
+      justify-content: center;
+    }
+
+  h2 {
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: white;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding:50px 50px;
+    max-width: 1100px;
+
+    }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:92%;
+}
+
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: white;
+    font-size: 50px;
+  }
+  .logo {
+    color: black;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: white;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid white;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid white;
+    background-color: #fff !important;
+    color: white;
+  }
+  .panel-heading {
+    color: black !important;
+    background-color: white !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: white;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black!important;
+  }
+  a.nav-item.nav-link.active {
+      color: white;
+      /*background-color: #b86d69;*/
+      background-color: #c2737f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: black !important;
+      /*background-color: #e1adaa !important;*/
+      background-color: #e5c4c9 !important;
+    }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .navbar img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+
+        }
+  #myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#myBtn:hover {
+  background-color:#b86d69 ;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+<header class="text-center">
+  <div><br></div>
+  <nav id="navbar">
+    <img src="images/logo_2024.png" alt="Logo image" width="120" height="52">
+  </nav>
+  <div><br></div>
+  </header>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
+
+  <div>
+
+<nav class="navbar navbar-default navbar-absolute-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+      </button>
+      <!-- <img src="images/logo.PNG" alt="RAID 2022 logo"> -->
+      <!-- <a class="navbar-brand" href="#myPage">Logo</a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav  mr-auto">
+
+        <li><a class="nav-item nav-link active" href="index.html">Home</a></li>
+        <!-- <li><a href="instructions.html">Instructions for Authors</a></li> -->
+        <li><a href="call.html">Call for Papers</a></li>
+        <li><a href="venue.html">Venue & Travel</a></li>
+        <!-- <li><a href="social.html">Social Activ,ities</a></li> -->
+        <li><a href="program.html">Program</a></li>
+        <!--li><a href="booklet.html" target="_blank">Brochure</a></li-->
+        <!-- <li><a href="accepted.html">Accepted Papers</a></li> -->
+        <li><a href="accepted_open.html"> Accepted Papers</a></li>
+
+        <li><a href="awards.html">Awards</a></li>
+
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="committees.html">Committees</a></li>
+        <li><a href="sponsorship.html"> Sponsorship</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <div>
+  <div class="text-center">
+      <div class="image-responsive">
+        <figure class="aligncenter size-full">
+<img class="responsive" loading="lazy" src="images/2023socialactivities.png"  class="center" width="1100" height="265">
+</figure>
+</div>
+
+ <div>
+
+
+<!-- Container (About Section) -->
+<div id="social"  class="container-fluid">
+  <div class="text-center">
+ <!-- <h2>Social Activities</h2> -->
+</div>
+  <div class="text-center">
+      <p>
+     <h4><b>Welcome Reception </b> </h4>
+
+    </p>
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+
+         <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
+      <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
+              <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
+      <div style="display: flex; align-items: center; justify-content: center;">
+                <figure style="margin-right: 20px;">
+                <a href="https://www.unipd.it/" target="_blank">
+                <img src="images/logo_unipd.png"  class="img-responsive" alt="polyu" style="max-width: 400px;">
+                </a>
+                </figure>
+                <figure style="margin-right: 20px;">
+                  <a href="https://www.math.unipd.it/" target="_blank">
+                  <img src="images/mathunipd.jpg"  class="img-responsive" alt="polyu" style="max-width: 300px;">
+                  </a>
+                  </figure>
+            </div>
+
+            <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Diamond </p>
+
+           <div style="display: flex; justify-content: center;">
+            <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
+              <a href="https://www.kaust.edu.sa/" target="_blank">
+              <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%;">
+              </a>
+            </div>
+          </div>
+
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Platinum </p>
+
+          <div style="display: flex; justify-content: center;">
+           <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
+             <a href="https://www.google.com/" target="_blank">
+             <img src="images/Google-Logo.png" alt="Google" style="max-width: 100%;">
+             </a>
+           </div>
+         </div> 
+      </div>
+        <hr />
+      </div>
+
+
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      var rootElement = document.documentElement;
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        })
+      }
+      </script>
+
+
+</body>
+</html>

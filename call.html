@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>RAID 2025 – The 28th International Symposium on Research in Attacks, Intrusions and Defenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+  <style>
+   body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 27px;
+      text-transform: none;
+      color: #303030;
+      align-items: center;
+      justify-content: center;
+    }
+
+  h2 {
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: white;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding:50px 50px;
+    max-width: 1100px;
+
+    }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: white;
+    font-size: 50px;
+  }
+  .logo {
+    color: black;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: white;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid white;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid white;
+    background-color: #fff !important;
+    color: white;
+  }
+  .panel-heading {
+    color: black !important;
+    background-color: white !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: white;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    text-align:center;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black!important;
+  }
+  a.nav-item.nav-link.active {
+      color: white;
+      /*background-color: #b86d69;*/
+      background-color: #4A7FB5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: black !important;
+      /*background-color: #e1adaa !important;*/
+      background-color: #c4d6e5 !important;
+    }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .navbar img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+
+        }
+  .table {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+
+.table th, .table td {
+vertical-align: middle!important;
+}
+.tab01{
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+  #myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#myBtn:hover {
+  background-color:#b86d69 ;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+<header class="text-center">
+  <div><br></div>
+  <nav id="navbar">
+    <img src="images/logo_2025.png" alt="Logo image" width="120" height="52">
+  </nav>
+  <div><br></div>
+  </header>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
+
+  <div>
+
+<nav class="navbar navbar-default navbar-absolute-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+      </button>
+      <!-- <img src="images/logo.PNG" alt="RAID 2022 logo"> -->
+      <!-- <a class="navbar-brand" href="#myPage">Logo</a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav  mr-auto" style="float: none;display: inline-block;">
+
+        <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="instructions.html">Instructions for Authors</a></li> -->
+            <li><a class="nav-item nav-link active" href="call.html">Call for Papers</a></li>
+	      <li><a href="call_poster.html">Call for Posters</a></li>
+            <li><a href="venue.html">Venue & Travel</a></li>
+            <!-- <li><a href="social.html">Social Activ,ities</a></li> -->
+            <li><a href="program.html">Program</a></li>
+	          <!--li><a href="booklet.html" target="_blank">Brochure</a></li-->
+            <!-- <li><a href="accepted.html">Accepted Papers</a></li> -->
+             <li><a href="accepted_open.html">Accepted Papers</a></li>
+
+           <li><a href="awards.html">Awards</a></li>
+
+            <li><a href="registration.html">Registration</a></li> 
+            <li><a href="committees.html">Committees</a></li>
+<!--             <li><a href="sponsorship.html"> Sponsorship</a></li> -->
+            <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="text-center">
+      <div id="carouselContainer" style="display: flex; justify-content: center;">
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/bg1_resized_new.jpg"  alt="Image 1">
+          </div>
+      
+          <div class="item">
+            <img src="images/bg2_resized.jpg"  alt="Image 2" >
+          </div>
+      
+          <div class="item">
+            <img src="images/bg3_resized.jpg"  alt="Image 3">
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<!-- Container (About Section) -->
+<div id="call"  class="container-fluid">
+
+    <div class="responsive" align="justify">
+     <p><i>28th International Symposium on Research in Attacks, Intrusions, and Defenses</i></p>
+     <br/>
+     <div class="text-center">
+      <h2>Call for Papers</h2>
+    </div>
+      <p>Since its inception in 1997, the International Symposium on Research in Attacks, Intrusions and Defenses (RAID) has established itself as a venue where leading researchers and practitioners from academia, industry, and the government are given the opportunity to present novel research in a unique venue to an engaged and lively community.</p>
+
+       <p> The conference is known for the quality and thoroughness of the reviews of the papers submitted, the desire to build a bridge between research carried out in different communities, and the emphasis given on the need for sound experimental methods and measurement to improve the state of the art in cybersecurity.</p>
+
+        <p>We are soliciting research papers on topics covering all well-motivated computer security problems. We care about techniques that identify new real-world threats, techniques to prevent them, to detect them, to mitigate them or to assess their prevalence and their consequences. Measurement papers are encouraged, as well as papers offering public access to new tools or datasets, or experience papers that clearly articulate important lessons learned </p>
+           <p>Specific topics of interest to RAID include, but are not limited to:</p>
+        <ul>
+            <li>Cloud security</li>
+	    <li>Cybercrime and underground economies</li>
+	    <li>Cyber-physical systems security and threats against critical infrastructures</li>
+	    <li>Denial-of-Service attacks and defenses</li>
+	    <li>Digital forensics</li>
+	    <li>Hardware security</li>
+	    <li>Intrusion detection and prevention</li>
+	    <li>IoT security</li>
+	    <li>Machine learning for security</li>
+	    <li>Malware and unwanted software</li>
+	    <li>Mobile security and privacy</li>
+	    <li>Network security</li>
+	    <li>Program analysis and reverse engineering</li>
+	    <li>Security education and training</li>
+	    <li>Security measurement studies</li>
+	    <li>Security of machine learning systems</li>
+	    <li>Software security</li>
+	    <li>Systems security</li>
+	    <li>Statistical and adversarial learning for computer security</li>
+	    <li>Usable security and privacy</li>
+	    <li>Vulnerability analysis and exploitation techniques</li>
+	    <li>Web security and privacy</li>
+          </ul>
+       <p> Papers will be judged on novelty, significance, correctness, and clarity. We expect all papers to provide enough detail to enable the reproducibility of their experimental results. We encourage authors to make both the tools and data publicly available.</p>
+       <p>More information is available at  <a href="https://raid2025.github.io/"> https://raid2025.github.io/</a>. </p>
+       <div class="text-center">
+       <h2>Important Dates</h2>
+      </div>
+
+      <div class="text-center">
+				<table class="table" style="vertical-align: middle">
+										<tbody><tr>
+											<td><b>Submission Deadline:</b></td>
+											<td>
+												<span style="color:black">Thursday <s>April 17th</s> <span style="color:red; font-weight:bold;">April 24th 2025</span>, 11:59:59pm
+                          <br>Anywhere on earth (UTC-12)</br>
+                        </span>
+											</td>
+										</tr>
+										<tr>
+											<td><b>Notification to Authors:</b></td>
+											<td>
+												<span style="color:black">Wednesday July 9th 2025</span>
+											</td>
+										</tr>
+										 <tr>
+											<td><b>Camera-ready Deadline:</b></td>
+											<td>
+												<span style="color:black">Thursday Aug 14th 2025</span>
+											</td>
+										</tr>
+										<tr>
+											<td><b>Conference Dates:</b> </td>
+											<td>
+												<span style="color:black">October 19th - October 22nd 2025</span>
+											</td>
+										</tr>
+				</tbody></table>
+			</div>
+
+      <br/>
+
+
+    <h4><b>Program Committee</b></h4>
+    <p>We are looking for volunteers, and we are accepting nominations (self-nominations are welcome as well). If interested, please fill this form: <a href="https://forms.gle/yVia9CV9wtRxQY388"> https://forms.gle/yVia9CV9wtRxQY388</a>.</p>
+
+   <br/>
+
+    <h4><b>Submission process and format</b></h4>
+	<p>The submission site is available here: <a href="https://raid2025.hotcrp.com/">https://raid2025.hotcrp.com/</a>.</p>
+    <p>Submissions must be a PDF file, and should follow the IEEE 8.5″ x 11″ two-column format using 10pt fonts and the IEEE Conference template (downloadable by selecting “Conferences” in the IEEE-Template Selector <a href="https://template-selector.ieee.org/">https://template-selector.ieee.org/</a>). The submission must be no more than 12 pages long, excluding the bibliography, well-marked appendices, and supplementary material.</p>
+    <p>Note that reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the IEEE format. Submissions not following the required format may be rejected without review.</p>
+<br/>
+
+	<h4><b>Review process</b></h4>
+	<p>Reviewing will be double-blind, meaning the authors’ identities will be hidden from the reviewers. All papers will be reviewed by at least three reviewers and will receive notification according to the timeline above. No major/minor revision options are allowed. All papers must be appropriately anonymized: author names or affiliations must not appear in the submission, you must refer to your own prior work in the third person, you should not give the paper a title that corresponds to a publicly available technical report, you should anonymize the bibliographic section in an appropriate manner, etc. Papers that are not properly anonymized may be rejected without review. While submitted papers must be anonymous, authors may choose to give talks about their work, post a preprint of the paper online, disclose security vulnerabilities to vendors or the public, etc. during the review process. In case of doubts, please reach out to the program committee chairs at <a href="mailto:raid25.pc.chairs@gmail.com">raid25.pc.chairs@gmail.com</a>.</p>
+	 <p>All submissions will be judged on originality, relevance, correctness, and clarity. Submissions must not substantially duplicate work that has already been published elsewhere or submitted in parallel to a journal or to any other conference or workshop with proceedings. Simultaneous submission of the same work to multiple venues, submission of previously published work, and plagiarism constitute dishonesty or fraud. RAID, like other scientific and technical conferences and journals, prohibits these practices and may, on the recommendation of the program chair, take action against authors who have committed them. RAID abides with policies for plagiarism, submission confidentiality, reviewer anonymity, and prior and concurrent paper submission.</p>
+	 <br/>	
+		
+    <h4><b>Human Subjects and Ethical Considerations</b></h4>
+    <p>Submissions that describe experiments on human subjects, that analyze data derived from human subjects (even anonymized data), or that otherwise may put humans at risk should:</p>
+   <p>Disclose whether the research received approval or a waiver from each of the authors’ institutional ethics review boards (e.g., an IRB). Discuss steps taken to ensure that participants and others who might have been affected by an experiment were treated ethically and with respect. If the submission deals with vulnerabilities (e.g., software vulnerabilities in a given program or design weaknesses in a hardware system), the authors need to discuss in detail the steps they have already taken or plan to take to address these vulnerabilities (e.g., by disclosing vulnerabilities to the vendors). The same applies if the submission deals with personally identifiable information (PII) or other kinds of sensitive data. If a paper raises significant ethical and legal concerns, it might be rejected based on these concerns.</p>
+
+
+ <p>Authors who are unsure whether their submissions might meet these guidelines, or who have specific questions about the guidelines, are welcome to contact the program committee chairs at <a href="mailto:raid25.pc.chairs@gmail.com">raid25.pc.chairs@gmail.com</a>.</p>
+
+    </br>
+
+<h4><b>Proceedings by Conference Publishing Services CPS </b></h4>   
+    <p>Papers that have been formally reviewed and accepted will be presented at RAID 2025 and published in conference proceedings by <a href="https://www.computer.org/conferences/cps">Conference Publishing Services</a>, CPS, and will be submitted to IEEE Xplore Digital Library. By submitting a paper, you agree that at least one of the authors will attend the conference to present it.</p> 
+	<p>For each accepted paper, at least one author is required to pay a full author registration. Any no-show papers will be reported to the publisher and removed from the conference proceedings. Note that for papers that share authors, a separate author registration is required for each paper.</p>
+	<p>Note that the authors should adhere to ethical and professional standards of IEEE. Please refer to <a href="https://www.ieee.org/about/corporate/governance/p7-8.html">IEEE Code of Ethics</a> and <a href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/">IEEE Submission Policies</a>.</p>
+  </br>
+
+</div>
+<br/>
+      </div>
+
+
+<div class="container-fluid">
+  <hr />
+</div>
+
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      var rootElement = document.documentElement;
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        })
+      }
+	    // Allowed pages list
+      const allowedPages = [
+          "index.html",
+          "committees.html",
+          "contact.html",
+	  	  "call.html",
+	      "call_poster.html",
+          "venue.html",
+	      "registration.html",
+		  "accepted_open.html",
+		  "program.html",
+		  "awards.html"
+	      
+      ];
+
+      // Extract the current page name from the URL
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Redirect to index.html if the current page is not in the allowed list
+      if (!allowedPages.includes(currentPage) && currentPage !== "") {
+          window.location.href = "https://raid2025.github.io/index.html";
+      }
+      </script>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>RAID 2025 – The 28th International Symposium on Research in Attacks, Intrusions and Defenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 27px;
+      text-transform: none;
+      color: #303030;
+      align-items: center;
+      justify-content: center;
+    }
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  h2 {
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: white;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding:50px 50px;
+    max-width: 1100px;
+
+    }
+
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: white;
+    font-size: 50px;
+  }
+  .logo {
+    color: black;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: white;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  td {
+  text-align: left;
+}
+
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid white;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid white;
+    background-color: #fff !important;
+    color: white;
+  }
+  .panel-heading {
+    color: black !important;
+    background-color: white !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: white;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black!important;
+  }
+   a.nav-item.nav-link.active {
+      color: white;
+      /*background-color: #b86d69;*/
+      background-color: #4A7FB5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: black !important;
+      /*background-color: #e1adaa !important;*/
+      background-color: #c4d6e5 !important;
+    }
+	  
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .navbar img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+
+        }
+    #myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#myBtn:hover {
+  background-color:#b86d69 ;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  #DLtoc {
+            font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+            }
+
+            #DLheader {
+            }
+            #DLheader h1 {
+            font-size:16px;
+            }
+
+            #DLcontent {
+            font-size:14px;
+            }
+            #DLcontent h2 {
+            font-size:16px;
+            margin-bottom:5px;
+            }
+            #DLcontent h3 {
+            font-size:15px;
+            padding-left:20px;
+            margin-bottom:0px;
+            }
+
+            #DLcontent ul{
+            margin-top:0px;
+            margin-bottom:0px;
+            }
+
+            .DLauthors li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLauthors li:after{
+            content:",";
+            }
+            .DLauthors li.nameList.Last:after{
+            content:"";
+            }
+
+            .DLabstract {
+            padding-left:40px;
+            padding-right:20px;
+            display:block;
+            }
+
+            .DLformats li{
+            display: inline;
+            list-style-type: none;
+            padding-right: 5px;
+            }
+
+            .DLformats li:after{
+            content:",";
+            }
+            .DLformats li.formatList.Last:after{
+            content:"";
+            }
+
+            .DLlogo {
+            vertical-align:middle;
+            padding-right:5px;
+            border:none;
+            }
+
+            .DLcitLink {
+            margin-left:20px;
+            }
+
+            .DLtitleLink {
+            margin-left:20px;
+            }
+
+            .DLotherLink {
+            margin-left:0px;
+            }
+  </style>
+</head>
+<header class="text-center">
+  <nav id="navbar">
+    <div><br></div>
+   <img src="images/logo_2025.png" alt="Logo image" width="120" height="52">
+    <div><br></div>
+  </nav>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
+
+  <div>
+
+    <nav class="navbar navbar-default navbar-absolute-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          <!-- <img src="images/logo.PNG" alt="RAID 2022 logo"> -->
+          <!-- <a class="navbar-brand" href="#myPage">Logo</a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav  mr-auto">
+
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="instructions.html">Instructions for Authors</a></li> -->
+            <li><a href="call.html">Call for Papers</a></li>
+	    <li><a href="call_poster.html">Call for Posters</a></li>
+            <li><a href="venue.html">Venue & Travel</a></li>
+            <!-- <li><a href="social.html">Social Activ,ities</a></li> -->
+            <li><a href="program.html">Program</a></li>
+	          <!--li><a href="booklet.html" target="_blank">Brochure</a></li-->
+            <!-- <li><a href="accepted.html">Accepted Papers</a></li> -->
+            <li><a class="nav-item nav-link active" href="accepted_open.html">Accepted Papers</a></li>
+
+            <li><a href="awards.html">Awards</a></li>
+
+            <li><a href="registration.html">Registration</a></li> 
+            <li><a href="committees.html">Committees</a></li>
+<!--             <li><a href="sponsorship.html"> Sponsorship</a></li> -->
+            <li><a href="contact.html"> Contact</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+ <div class="text-center">
+      <div id="carouselContainer" style="display: flex; justify-content: center;">
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/bg1_resized_new.jpg"  alt="Image 1">
+          </div>
+      
+          <div class="item">
+            <img src="images/bg2_resized.jpg"  alt="Image 2" >
+          </div>
+      
+          <div class="item">
+            <img src="images/bg3_resized.jpg"  alt="Image 3">
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    </div>
+
+<div id="accepted" class="container-fluid">
+  <div class="text-center">
+ <h2>Accepted papers</h2>
+ <hr/>
+ 
+</div>
+
+<div class="responsive" style="font-size:17px; text-align:left;">
+  <p><b> A Comprehensive Quantification of Inconsistencies in Memory Dumps <a href="#" style="display:none" data-pid="10">[PDF]</a></b></br>
+  Andrea Oliveri, EURECOM; Davide Balzarotti, EURECOM; 
+  </p>
+  <p><b> A Longitudinal Analysis of LockBit 3.0’s Extortion Lifecycle and Response to Law Enforcement <a href="#" style="display:none" data-pid="293">[PDF]</a></b></br>
+  Yin Minn Pa Pa, Yokohama National University; Yuji Sekine, Yokohama National University; Yamato Kawaguchi, Yokohama National University; Tatsuki Yogo, Yokohama National University; Kelvin Lubbertsen, Delft University of Technology; Rolf van Wegberg, Delft University of Technology; Michel van Eeten, Delft University of Technology; Katsunari Yoshioka, Yokohama National University; 
+  </p>
+  <p><b> Activation Functions Considered Harmful: Recovering Neural Network Weights through Controlled Channels <a href="#" style="display:none" data-pid="78">[PDF]</a></b></br>
+  Jesse Spielman, University of Birmingham; David Oswald, University of Birmingham; Mark Ryan, University of Birmingham; Jo Van Bulck, DistriNet, KU Leuven; 
+  </p>
+  <p><b> Active Attack Resilience in 5G: A New Take on Authentication and Key Agreement <a href="#" style="display:none" data-pid="83">[PDF]</a></b></br>
+  Nazatul Haque Sultan, CSIRO&#x27;s Data61, Sydney; Xinlong Guan, CSIRO&#x27;s Data61, Sydney; Josef Pieprzyk, CSIRO&#x27;s Data61, Sydney; Wei Ni, CSIRO&#x27;s Data61, Sydney; Sharif Abuadbba, CSIRO&#x27;s Data61, Sydney; Hajime Suzuki, CSIRO&#x27;s Data61, Sydney; 
+  </p>
+  <p><b> ADAPT: A Pseudo-labeling Approach to Combat Concept Drift in Malware Detection <a href="#" style="display:none" data-pid="305">[PDF]</a></b></br>
+  Md Tanvirul Alam, Rochester Institute of Technology; Aritran Piplai, University of Texas, El Paso; Nidhi Rastogi, Rochester Institute of Technology; 
+  </p>
+  <p><b> An In-model Spy in Edge Intelligence <a href="#" style="display:none" data-pid="184">[PDF]</a></b></br>
+  Fengxu Yang, ShanghaiTech University; Paizhuo Chen, ShanghaiTech University; Yihui Yan, ShanghaiTech University; Zhice Yang, ShanghaiTech University; 
+  </p>
+  <p><b> BadFU: Backdoor Federated Learning Through Adversarial Machine Unlearning <a href="#" style="display:none" data-pid="295">[PDF]</a></b></br>
+  Bingguang Lu, University of Newcastle; Hongsheng Hu, University of Newcastle; Yuantian Miao, University of Newcastle; Shaleeza Sohail, University of Newcastle; Chaoxiang He, Shanghai Jiao Tong University; Shuo Wang, Shanghai Jiao Tong University; Xiao Chen, University of Newcastle; 
+  </p>
+  <p><b> BadLogo: A Physically Realizable Adversarial Sticker for Evaluating the Robustness of Face Recognition Models <a href="#" style="display:none" data-pid="183">[PDF]</a></b></br>
+  Fuqi Qi, Xidian University; Haichang Gao, Xidian University; Boling Li, Xidian University; Shiping Guo, Xidian University; Yuming Zheng, Xidian University; Bingqian Zhou, Xidian University; 
+  </p>
+  <p><b> Carbon Filter: Scalable, Efficient, and Secure Alert Triage for Endpoint Detection &amp; Response <a href="#" style="display:none" data-pid="70">[PDF]</a></b></br>
+  Muhammad Adil Inam, University of Illinois at Urbana-Champaign; Jonathan Oliver, Broadcom; Raghav Batta, Broadcom; Adam Bates, University of Illinois at Urbana-Champaign; 
+  </p>
+  <p><b> Careless Whisper: Exploiting Silent Delivery Receipts to Monitor Users on Mobile Instant Messengers <a href="#" style="display:none" data-pid="223">[PDF]</a></b></br>
+  Gabriel Karl Gegenhuber, University of Vienna; Maximilian Günther, University of Vienna; Markus Maier, University of Vienna; Aljosha Judmayer, University of Vienna; Florian Holzbauer, University of Vienna; Philipp Frenzel, SBA Research; Johanna Ullrich, University of Vienna; 
+  </p>
+  <p><b> CasinoLimit: An Offensive Dataset Labeled with MITRE ATT&amp;CK Techniques <a href="#" style="display:none" data-pid="252">[PDF]</a></b></br>
+  Sebastien Kilian, CentraleSupélec; Valérie Viet Triem Tong, CentraleSupélec; Jean-François Lalande, CentraleSupélec; Frédéric Majorczyk, DGA, Ministère des Armées; Alexandre Sanchez, Inria; Natan Talon, CentraleSupélec; Pierre-Victor Besson, Inria; Helene Orsini, CentraleSupelec; Pierre Lledo, DGA, Ministère des Armées; Pierre-François Gimenez, Univ. Rennes, Inria, IRISA; 
+  </p>
+  <p><b> Deception Meets Diagnostics: Deception-based Real-Time Threat Detection in Healthcare Web Systems <a href="#" style="display:none" data-pid="344">[PDF]</a></b></br>
+  Zeeshan Zulkifl Shah, Macquarie University; Muhammad Ikram, Macquarie University; Hassan Jameel Asghar, Macquarie University; Mohamed Ali Kaafar, Macquarie University; 
+  </p>
+  <p><b> Deep Learning-Based Attacks on Traditional Watermarking Systems in Real-Time Live Video Streams <a href="#" style="display:none" data-pid="203">[PDF]</a></b></br>
+  Amin Sakzad, Monash University; Rebecca Wang, Monash University; Stuart W. Hall, Monash University; 
+  </p>
+  <p><b> DeepFW: A DNN-Based Firmware Version Identification Framework for Online IoT Devices <a href="#" style="display:none" data-pid="81">[PDF]</a></b></br>
+  Zhen Lei, Taiyuan University of Technology, China; Nian Xue, Shandong University of Technology, China; Zhen Li, Shandong University of Technology, China; Dan Yu, Taiyuan University of Technology, China; Xin Huang, Taiyuan University of Technology, China; Yongle Chen, Taiyuan University of Technology, China; 
+  </p>
+  <p><b> Demystifying Feature Engineering in Malware Analysis of API Call Sequences <a href="#" style="display:none" data-pid="193">[PDF]</a></b></br>
+  Tianheng Qu, Institute of Information Engineering at Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences, China; Hongsong Zhu, Institute of Information Engineering, CAS, China; School of Cyber Security, University of Chinese Academy of Sciences, China; Limin Sun, Institute of Information Engineering of CAS; Haining Wang, Virginia Tech; Haiqiang Fei, Institute of Information Engineering at Chinese Academy of Sciences; Zheng He, National Computer Network Emergency Response Technical Team/Coordination Center of China; Zhi Li, Institute of Information Engineering, Chinese Academy of Sciences, China; 
+  </p>
+  <p><b> DEPHP: A Source Code Recovery Method for PHP Bytecode with Improved Structural Analysis <a href="#" style="display:none" data-pid="2">[PDF]</a></b></br>
+  Shiwu Zhao, Institute of Information Engineering, Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences; Ningjun Zheng, Tencent Technology (Shanghai)Co., Ltd., Shanghai, China; Haoyu Li, Institute of Information Engineering, Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences; Ruizhi Feng, Institute of Information Engineering, Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences; Xingchen Chen, Institute of Information Engineering, Chinese Academy of Sciences; Ru Tan, Institute of Information Engineering, Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences; Qixu Liu, Institute of Information Engineering, Chinese Academy of Sciences; School of Cyber Security, University of Chinese Academy of Sciences; 
+  </p>
+  <p><b> Detecting and Adapting to Stealthy Label-Inversion Drifts via Conditional Distribution Inference <a href="#" style="display:none" data-pid="185">[PDF]</a></b></br>
+  Xiaoli Zhang, University of Science and Technology Beijing; Yue Xiao, Wuhan University; Qilei Yin, Zhongguancun Lab; Zhengyang Li, University of Science and Technology Beijing; Xinyan Wang, China Unicom Digital Technology Co., Ltd; Jianrong Zhang, China Unicom Digital Technology Co., Ltd; Ke Xu, Tsinghua University; Qi Li, Tsinghua University; Xu-Cheng Yin, University of Science and Technology Beijing; 
+  </p>
+  <p><b> Developing a Strong CPS Defender: An Evolutionary Approach <a href="#" style="display:none" data-pid="24">[PDF]</a></b></br>
+  Qingyuan Hu, School of Information Science and Technology, ShanghaiTech University; Christopher M. Poskitt, Singapore Management University; Jun Sun, Singapore Management University; Yuqi Chen, School of Information Science and Technology, ShanghaiTech University; 
+  </p>
+  <p><b> Evaluating LLM-Based Detection of Malicious Package Updates in npm <a href="#" style="display:none" data-pid="287">[PDF]</a></b></br>
+  Elizabeth Wyss, University of Kansas; Dominic Tassio, University of Kansas; Lorenzo De Carli, University of Calgary; Drew Davidson, University of Kansas; 
+  </p>
+  <p><b> EventHunter: Dynamic Clustering and Ranking of Security Events from Hacker Forum Discussions <a href="#" style="display:none" data-pid="333">[PDF]</a></b></br>
+  Yasir Ech-chammakhy, Mohammed VI Polytechnic University, College of Computing; Anas Motii, Mohammad VI Polytechnic University, College of Computing; Anass Rabii, Deloitte Morocco Cyber Center; Jaafar Chbili, Deloitte Conseil; 
+  </p>
+  <p><b> Exploring Runtime Evolution in Android: A Cross-Version Analysis and Its Implications for Memory Forensics <a href="#" style="display:none" data-pid="314">[PDF]</a></b></br>
+  Babangida Bappah, Louisiana State University; Lauren G Bristol, Louisiana State University; Lamine Noureddine, Louisiana State University; Sideeq Bello, Louisiana State University; Umar Farooq, Louisiana State University; Aisha Ali-Gombe, Louisiana State University; 
+  </p>
+  <p><b> FedSIG: Privacy-Preserving Federated Recommendation via Synthetic Interaction Generation <a href="#" style="display:none" data-pid="313">[PDF]</a></b></br>
+  Thirasara Ariyarathna, University of New South Wales; Salil Kanhere, University of New South Wales; Hye-Young (Helen) Paik, University of New South Wales (UNSW); Meisam Mohammady, Iowa State University of Science and Technology, Iowa, The USA; 
+  </p>
+  <p><b> From Concealment to Exposure: Understanding the Lifecycle and Infrastructure of APT Domains <a href="#" style="display:none" data-pid="158">[PDF]</a></b></br>
+  Athanasios Avgetidis, Georgia Institute of Technology; Aaron Faulkenberry, Georgia Institute of Technology; Boladji Vinny Adjibi, Georgia Institute of Technology; Tillson Galloway, Georgia Institute of Technology; Panagiotis Kintis, Georgia Institute of Technology; Omar Alrawi, Georgia Institute of Technology; Zane Ma, Oregon State University; Angelos Keromytis, Georgia Institute of Technology; Fabian Monrose, Georgia Institute of Technology; Roberto Perdisci, University of Georgia; Manos Antonakakis, Georgia Tech; 
+  </p>
+  <p><b> From Text to Actionable Intelligence: Automating STIX Entity and Relationship Extraction <a href="#" style="display:none" data-pid="229">[PDF]</a></b></br>
+  Ahmed Lekssays, Qatar Computing Research Institute; Husrev Taha Sencar, Qatar Computing Research Institute; Ting Yu, Mohamed bin Zayed University of Artificial Intelligence; 
+  </p>
+  <p><b> Functional Encryption in Secure Neural Network Training: Data Leakage and Practical Mitigations <a href="#" style="display:none" data-pid="349">[PDF]</a></b></br>
+  Alexandru Ionita, &quot;Al. I. Cuza&quot; University of Iasi; Andreea Ionita, &quot;Al. I. Cuza&quot; University of Iasi; 
+  </p>
+  <p><b> Guard-GBDT: Efficient Privacy-Preserving Approximated GBDT Training on Vertical Dataset <a href="#" style="display:none" data-pid="189">[PDF]</a></b></br>
+  Anxiao Song, Xidian university; Shujie Cui, Monash University; Jianli Bai, Singapore Management University; Ke Cheng, Xidian university; Yulong Shen, Xidian University, China; Giovanni Russello, University of Auckland; 
+  </p>
+  <p><b> H2FUZZ: Guided, Black-box, Differential Fuzzing for HTTP/2-to-HTTP/1 Conversion Anomalies <a href="#" style="display:none" data-pid="219">[PDF]</a></b></br>
+  Anthony Gavazzi, Northeastern University; Weixin Kong, Northeastern University; Engin Kirda, Northeastern University; 
+  </p>
+  <p><b> Malware and Vulnerability Analysis using Graph-synchronized Language Model <a href="#" style="display:none" data-pid="159">[PDF]</a></b></br>
+  Paventhan Vivekanandan, Indiana University Bloomington; Alexander Shroyer, Indiana University Bloomington; Martin Swany, Indiana University Bloomington; 
+  </p>
+  <p><b> MotionDecipher: General Video-assisted Passcode Inference In Virtual Reality <a href="#" style="display:none" data-pid="303">[PDF]</a></b></br>
+  Guanchong Huang, University of Oklahoma; Yan He, University of Oklahoma; Shangqing Zhao, University of Oklahoma; Yi Wu, University of Oklahoma; Song Fang, University of Oklahoma; 
+  </p>
+  <p><b> MuSAR: Multi-Step Attack Reconstruction from Lightweight Security Logs via Event-Level Semantic Association in Multi-Host Environments <a href="#" style="display:none" data-pid="85">[PDF]</a></b></br>
+  Yang Liu, Xi&#x27;an Jiaotong University; Zisen Xu, Xi&#x27;an Jiaotong University; Zian Luo, Xi&#x27;an Jiaotong University; Jin&#x27;ao Shang, Xi&#x27;an Jiaotong University; Shilong Zhang, Xi&#x27;an Jiaotong University; Haichuan Zhang, University of Science and Technology of China; Ting Liu, Xi&#x27;an Jiaotong University; 
+  </p>
+  <p><b> NIDP:Solving Feature Distribution Shifts in Network Intrusion Detection via Neural Pruning <a href="#" style="display:none" data-pid="207">[PDF]</a></b></br>
+  Jiangtao Ding, Zhejiang University of Technology; Junli ZHENG, Zhejiang University of Technology; Chenyang Mo, China Jiliang University; Zhicheng Xu, Zhejiang University of Technology; Han Zhu, Zhejiang University of Technology; Hongbing Cheng, Zhejiang University of Technology; 
+  </p>
+  <p><b> On the Effectiveness of Custom Transformers for Binary Analysis <a href="#" style="display:none" data-pid="23">[PDF]</a></b></br>
+  Xuezixiang Li, UC Riverside; Lian Gao, UC Riverside; Sheng Yu, UC Riverside; Yu Qu, UC Riverside; Heng Yin, UC Riverside; 
+  </p>
+  <p><b> Overlapping IPv4, IPv6, and TCP data: exploring errors, test case context, and multiple overlaps inside network stacks and NIDSes with PYROLYSE <a href="#" style="display:none" data-pid="40">[PDF]</a></b></br>
+  Lucas Aubard, Inria; Johan Mazel, ANSSI; Gilles Guette, IMT Atlantique; Pierre Chifflier, ANSSI; 
+  </p>
+  <p><b> Perry: A High-level Framework for Accelerating Cyber Deception Experimentation <a href="#" style="display:none" data-pid="44">[PDF]</a></b></br>
+  Brian Singer, Carnegie Mellon University; Yusuf Saquib, Carnegie Mellon University; Lujo Bauer, Carnegie Mellon University; Vyas Sekar, Carnegie Mellon University; 
+  </p>
+  <p><b> Portal: Enabling Accurate Siemens PLC Rehosting via Peripheral Synthesis and Proactive Interrupt Synchronization <a href="#" style="display:none" data-pid="38">[PDF]</a></b></br>
+  Haoran Li, Zhejiang University; Dakun Shen, Zhejiang University; Wenbo Shen, Zhejiang University; Zhen Zhu, Zhejiang Lab; 
+  </p>
+  <p><b> PRIV-HFL: Privacy-Preserving and Robust Federated Learning for Heterogeneous Clients Against Data Reconstruction Attacks <a href="#" style="display:none" data-pid="105">[PDF]</a></b></br>
+  MOHAMMADREZA NAJAFI, La Trobe University; Hooman Alavizadeh, La Trobe University; Ahmad Salehi Shahraki, La Trobe University; A.S.M Kayes, La Trobe University; Wenny Rahayu, La Trobe University; 
+  </p>
+  <p><b> RBAClock: Contain RBAC Permissions through Secure Scheduling <a href="#" style="display:none" data-pid="248">[PDF]</a></b></br>
+  Qingwang Chen, Institute of Information Engineering, Chinese Academy of Sciences; Ru Tan, Institute of Information Engineering, Chinese Academy of Sciences; Xinyu Liu, Institute of Information Engineering, Chinese Academy of Sciences; Yuqi Shu, Institute of Information Engineering, Chinese Academy of Sciences; Zhou Tong, Institute of Information Engineering, Chinese Academy of Sciences; Haoqiang Wang, Institute of Information Engineering, Chinese Academy of Sciences; Ze Jin, Institute of Information Engineering, Chinese Academy of Sciences; Qixu Liu, Institute of Information Engineering, Chinese Academy of Sciences; 
+  </p>
+  <p><b> Re-examine Federated Rank Learning: Analyzing Its Robustness Against Poisoning Attacks <a href="#" style="display:none" data-pid="250">[PDF]</a></b></br>
+  Xiaofei Huang, Institute of Information Engineering,Chinese Academy of Sciences; Xiaojie Zhu, King Abdullah University of Science and Technology; chi chen, Institute of Information Engineering,Chinese Academy of Sciences; Paulo Esteves-Veríssimo, King Abdullah University of Science and Technology; 
+  </p>
+  <p><b> Reconstruction of Differentially Private Text Sanitization via Large Language Models <a href="#" style="display:none" data-pid="110">[PDF]</a></b></br>
+  Shuchao Pang, Nanjing University of Science and Technology; Zhigang Lu, Western Sydney University; Haichen Wang, Nanjing University of Science and Technology; Peng Fu, Institute of Information Engineering, Chinese Academy of Sciences; Yongbin Zhou, Nanjing University of Science and Technology; Jason (Minhui) Xue, CSIRO&#x27;s Data61 and Responsible AI Research (RAIR) Centre, The University of Adelaide; 
+  </p>
+  <p><b> Red-Teaming LLMs with Token Control Score: Efficient, Universal, and Transferable Jailbreaks <a href="#" style="display:none" data-pid="326">[PDF]</a></b></br>
+  Leo Hyun Park, Yonsei University; Taekyoung Kwon, Yonsei University; 
+  </p>
+  <p><b> Revealing Informed Scanners by Colocating Reactive and Passive Telescopes <a href="#" style="display:none" data-pid="315">[PDF]</a></b></br>
+  Dario Ferrero, Delft University of Technology; Georgios Smaragdakis, Delft University of Technology; Harm Griffioen, Delft University of Technology; 
+  </p>
+  <p><b> RF-Eye-D: Probing Feasibility of CMOS Camera Watermarking with Radio-Frequency Injection <a href="#" style="display:none" data-pid="224">[PDF]</a></b></br>
+  Hui Zhuang, Northeastern University; Yan Long, Northeastern University; Kevin Fu, Northeastern University; 
+  </p>
+  <p><b> Robust Cross-Modal Deepfake Detection via Facial UV Maps and Momentum Contrastive Learning <a href="#" style="display:none" data-pid="93">[PDF]</a></b></br>
+  Yuesen Tang, Southeast University; Yuanyang Zhang, Southeast Unviersity; Wangxiao Mao, Southeast University; Li Yao, Southeast University; 
+  </p>
+  <p><b> Scalable Active Directory Defense with α-Metagraph <a href="#" style="display:none" data-pid="332">[PDF]</a></b></br>
+  Nhu Long Nguyen, The University of Adelaide; Nickolas Falkner, The University of Adelaide; Hung Nguyen, The University of Adelaide; 
+  </p>
+  <p><b> Scalable and Generalizable RL Agents for Attack Path Discovery via Continuous Invariant Spaces <a href="#" style="display:none" data-pid="197">[PDF]</a></b></br>
+  Franco Terranova, Université de Lorraine, CNRS, Inria, LORIA; Abdelkader Lahmadi, Université de Lorraine, CNRS, Inria, LORIA; Isabelle Chrisment, Université de Lorraine, CNRS, Inria, LORIA; 
+  </p>
+  <p><b> Semantic Heat Guided Relational Privacy Inference Based on Panoptic Scene Graph <a href="#" style="display:none" data-pid="343">[PDF]</a></b></br>
+  Qi Hao, School of Cyber Science and Engineering, Southeast University; Jie Huang, Southeast University; Changhao Ding, School of Cyber Science and Engineering, Southeast University; Zeping Zhang, Southeast University; 
+  </p>
+  <p><b> SH3ARS: Privilege Reduction for ARMv8.0-A Secure Monitors <a href="#" style="display:none" data-pid="138">[PDF]</a></b></br>
+  Jonas Röckl, Friedrich-Alexander-Universität Erlangen-Nürnberg; Julian Funk, Friedrich-Alexander-Universität Erlangen-Nürnberg; Matti Schulze, Friedrich-Alexander-Universität Erlangen-Nürnberg; Tilo Müller, Hof University of Applied Sciences; 
+  </p>
+  <p><b> ShuffleV: A Microarchitectural Defense Strategy against Electromagnetic Side-Channel Attacks in Microprocessors <a href="#" style="display:none" data-pid="239">[PDF]</a></b></br>
+  Nuntipat Narkthong, Northeastern University; Yukui Luo, Binghamton University; Xiaolin Xu, Northeastern University; 
+  </p>
+  <p><b> STGraph: Spatio-Temporal Graph Mining for Anomaly Detection in Distributed System Logs <a href="#" style="display:none" data-pid="87">[PDF]</a></b></br>
+  Teng Li, Xidian University; Shengkai Zhang, Xidian University; Yebo Feng, Nanyang Technological University; Jiahua Xu, UCL; Zexu Dang, Xidian University; Yang Liu, Nanyang Technological University; Jianfeng Ma, Xidian University; 
+  </p>
+  <p><b> SyzGrapher: Resource-Centric Graph-Based Kernel Fuzzing <a href="#" style="display:none" data-pid="36">[PDF]</a></b></br>
+  Marius Fleischer, NVIDIA; Harrison Green, Carnegie Mellon University; Ilya Grishchenko, University of Toronto; Christopher Kruegel, UC Santa Barbara; Giovanni Vigna, UC Santa Barbara; 
+  </p>
+  <p><b> SyzRetrospector: A Large-Scale Retrospective Study of Syzbot <a href="#" style="display:none" data-pid="32">[PDF]</a></b></br>
+  Joseph Bursey, UC Irvine; Ardalan Amiri Sani, University of California, Irvine; Zhiyun Qian, University of California, Riverside; 
+  </p>
+  <p><b> TAPPecker: TAP Logic Inference and Violation Detection in Heterogeneous Smart Home Systems <a href="#" style="display:none" data-pid="165">[PDF]</a></b></br>
+  Qixiao Lin, Beihang University; Jian Mao, Beihang University; Ziwen Liu, Beihang University; Zhenkai Liang, National University of Singapore; 
+  </p>
+  <p><b> The Adaptive Arms Race: Redefining Robustness in AI Security <a href="#" style="display:none" data-pid="211">[PDF]</a></b></br>
+  Ilias Tsingenopoulos, KU Leuven; Vera Rimmer, KU Leuven; Davy Preuveneers, KU Leuven; Fabio Pierazzi, University College London; Lorenzo Cavallaro, University College London; Wouter Joosen, KU Leuven; 
+  </p>
+  <p><b> The Persistent Threat of DGA-Based Botnets <a href="#" style="display:none" data-pid="213">[PDF]</a></b></br>
+  Arthur Drichel, RWTH Aachen University; Ulrike Meyer, RWTH Aachen University; 
+  </p>
+  <p><b> TypeFlexer:Type Directed Flexible Program Partitioning <a href="#" style="display:none" data-pid="298">[PDF]</a></b></br>
+  Arunkumar Bhattar, Purdue University; Liyi Li, Iowa State University; Mingwei Zhu, University of Maryland, College Park; Le Chang, University of Maryland, College Park; Aravind Machiry, Purdue University; 
+  </p>
+  <p><b> Uncontained Danger: Quantifying Remote Dependencies in Containerized Applications <a href="#" style="display:none" data-pid="53">[PDF]</a></b></br>
+  Chris Tsoukaladelis, Stony Brook University; Roberto Perdisci, University of Georgia; Nick Nikiforakis, Stony Brook University; 
+  </p>
+  <p><b> Unsupervised Backdoor Detection and Mitigation for Spiking Neural Networks <a href="#" style="display:none" data-pid="325">[PDF]</a></b></br>
+  Jiachen Li, RMIT University; Bang Wu, RMIT University; Xiaoyu Xia, RMIT University; Xiaoning Liu, RMIT University; Xun Yi, RMIT University; Xiuzhen Zhang, RMIT University; 
+  </p>
+  <p><b> ViDToken: A Video-Transformer-Based Latent Token Defense for Adversarial Video Detection <a href="#" style="display:none" data-pid="26">[PDF]</a></b></br>
+  Wei Song, UNSW Sydney; Zhenchang Xing, CSIRO&#x27;s Data61; Liming Zhu, CSIRO&#x27;s Data61; Yulei Sui, UNSW Sydney; Jingling Xue, UNSW Sydney; 
+  </p>
+  <p><b> VulCodeMark: Adaptive Watermarking for Vulnerability Datasets Protection <a href="#" style="display:none" data-pid="294">[PDF]</a></b></br>
+  Di Cao, Swinburne University of Technology; Shigang Liu, CSIRO&#x27;s Data61, Australia; Jun Zhang, Swinburne University of Technology; Yang Xiang, Digital Capability Research Platform, Swinburne University of Technology; 
+  </p>
+  <p><b> When (Inter)actions Speak Louder Than (Pass)words: Task-Based Evaluation of Implicit Authentication in Virtual Reality <a href="#" style="display:none" data-pid="270">[PDF]</a></b></br>
+  Woojin Jeon, Sungkyunkwan University; Chaejin Lim, Sungkyunkwan University; Hyoungshick Kim, Sungkyunkwan University; 
+  </p>
+  <p><b> Zebrafix: Mitigating Memory-Centric Side-Channel Leakage via Interleaving <a href="#" style="display:none" data-pid="135">[PDF]</a></b></br>
+  Anna Pätschke, University of Luebeck; Jan Wichelmann, University of Luebeck; Thomas Eisenbarth, University of Luebeck; 
+  </p>
+  <p><b> {{alert(’CSTI’)}}: Large-Scale Detection of Client-Side Template Injection <a href="#" style="display:none" data-pid="97">[PDF]</a></b></br>
+  Lorenzo Pisu, University of Cagliari; Davide Balzarotti, EURECOM; Davide Maiorca, University of Cagliari, Italy; Giorgio Giacinto, University of Cagliari; 
+  </p>
+</div>
+  
+</div>
+</div>
+
+
+
+               <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
+      <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
+              <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
+      <div style="display: flex; align-items: center; justify-content: center;">
+                <figure style="margin-right: -15px;">
+                <a href="https://cis.unimelb.edu.au/" target="_blank">
+                <img src="images/unimelb_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                </a>
+                </figure>
+
+		<figure style="margin-right: -15px;">
+                <a href="https://www.uq.edu.au/" target="_blank">
+                <img src="images/uq_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                </a>
+                </figure>
+	      
+                <figure style="margin-right: -15px;">
+                  <a href="https://www.griffith.edu.au/" target="_blank">
+                  <img src="images/griffith_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                  </a>
+                  </figure>
+            </div>
+	<br>
+	<br>
+
+	
+	      
+       <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
+
+	<p style="font-weight:bold; font-size:24px; text-align:center;">Silver </p> 
+         	  <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
+	  
+				  <!-- University of Melbourne -->
+				  <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; padding: 10px; text-align: center;">
+				    <a href="https://cis.unimelb.edu.au/" target="_blank">
+				      <img src="images/unimelb_logo.png" alt="The University of Melbourne" style="max-width: 100%; height: auto;">
+				    </a>
+				  </div>
+				
+				  <!-- TikTok -->
+				  <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; padding: 10px; text-align: center;">
+				    <a href="https://lifeattiktok.com/" target="_blank">
+				      <img src="images/tiktok_logo.png" alt="TikTok" style="max-width: 100%; height: auto;">
+				    </a>
+				  </div>
+
+				   <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; padding: 10px; text-align: center;">
+				    <a href="https://www.google.com/" target="_blank">
+				      <img src="images/google.png" alt="Google" style="max-width: 100%; height: auto;">
+				    </a>
+				  </div>
+				
+				</div>
+
+		
+	<br>
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Bronze</p>
+
+          <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
+			
+			  <!-- BlockSec -->
+			  <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; padding: 10px; text-align: center;">
+			    <a href="https://blocksec.com/" target="_blank">
+			      <img src="images/BlockSec.svg" alt="BlockSec" style="max-width: 100%; height: auto;">
+			    </a>
+			  </div>
+			
+			  <!-- KAUST -->
+			  <div style="flex: 1 1 200px; max-width: 250px; box-sizing: border-box; padding: 10px; text-align: center;">
+			    <a href="https://www.kaust.edu.sa/en/" target="_blank">
+			      <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%; height: auto;">
+			    </a>
+			  </div>
+
+			</div>
+
+
+          
+
+      </div>
+        <hr />
+      </div>
+
+
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  var rootElement = document.documentElement;
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
+	    // Allowed pages list
+      const allowedPages = [
+          "index.html",
+          "committees.html",
+          "contact.html",
+		  "accepted_open.html",
+		  "program.html",
+		  "awards.html"
+      ];
+
+      // Extract the current page name from the URL
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Redirect to index.html if the current page is not in the allowed list
+      if (!allowedPages.includes(currentPage) && currentPage !== "") {
+          window.location.href = "https://raid2025.github.io/index.html";
+      }
+  </script>
+ 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

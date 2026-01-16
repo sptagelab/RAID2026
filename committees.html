@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>RAID 2025 – The 28th International Symposium on Research in Attacks, Intrusions and Defenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 27px;
+      text-transform: none;
+      color: #303030;
+      align-items: center;
+      justify-content: center;
+    }
+
+  h2 {
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .jumbotron {
+    background-color: white;
+    color: #fff;
+    padding: 80px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding:50px 50px;
+    max-width: 1100px;
+
+    }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: white;
+    font-size: 50px;
+  }
+  .logo {
+    color: black;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: black;
+  }
+  .carousel-indicators li {
+    border-color: white;
+  }
+  .carousel-indicators li.active {
+    background-color: black;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid white;
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid white;
+    background-color: #fff !important;
+    color: white;
+  }
+  .panel-heading {
+    color: black !important;
+    background-color: white !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: white;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color:white;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+    text-align:center;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: black!important;
+  }
+  a.nav-item.nav-link.active {
+      color: white;
+      /*background-color: #b86d69;*/
+      background-color: #4A7FB5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: black !important;
+      /*background-color: #e1adaa !important;*/
+      background-color: #c4d6e5 !important;
+    }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  .navbar img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: auto;
+
+        }
+  #myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    background: white;
+    width: 50px;
+    height: 50px;
+    display: block;
+    outline:none;
+    border:none;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#myBtn:hover {
+  background-color:#b86d69 ;
+}
+.responsive {
+  max-width: 98%;
+  height: auto;
+}
+.table {
+  width: 100%;
+  max-width: 780px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+}
+.tab01{
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+
+
+<header class="text-center">
+  <div><br></div>
+  <nav id="navbar">
+    <img src="images/logo_2025.png" alt="Logo image" width="120" height="52">
+  </nav>
+  <div><br></div>
+</header>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
+
+  <div>
+
+<nav class="navbar navbar-default navbar-absolute-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+
+      </button>
+      <!-- <img src="images/logo.PNG" alt="RAID 2022 logo"> -->
+      <!-- <a class="navbar-brand" href="#myPage">Logo</a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav  mr-auto" style="float: none;display: inline-block;">
+
+       <li><a  href="index.html">Home</a></li>
+            <!-- <li><a href="instructions.html">Instructions for Authors</a></li> -->
+            <li><a href="call.html">Call for Papers</a></li>
+	    <li><a href="call_poster.html">Call for Posters</a></li>
+            <li><a href="venue.html">Venue & Travel</a></li>
+            <!-- <li><a href="social.html">Social Activ,ities</a></li> -->
+            <li><a href="program.html">Program</a></li>
+	          <!--li><a href="booklet.html" target="_blank">Brochure</a></li-->
+            <!-- <li><a href="accepted.html">Accepted Papers</a></li> -->
+            <li><a href="accepted_open.html">Accepted Papers</a></li>
+
+            <li><a href="awards.html">Awards</a></li>
+
+            <li><a href="registration.html">Registration</a></li> 
+            <li><a class="nav-item nav-link active" href="committees.html">Committees</a></li>
+<!--             <li><a href="sponsorship.html"> Sponsorship</a></li> -->
+            <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="text-center">
+  <div id="carouselContainer" style="display: flex; justify-content: center;">
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/bg1_resized_new.jpg"  alt="Image 1">
+        </div>
+    
+        <div class="item">
+          <img src="images/bg2_resized.jpg"  alt="Image 2" >
+        </div>
+    
+        <div class="item">
+          <img src="images/bg3_resized.jpg"  alt="Image 3">
+        </div>
+    
+      </div>
+    </div>
+</div>
+
+ <div>
+
+
+
+<div id="committees"  class="container-fluid ">
+
+    <div class="text-center" >
+      <h3>Organizing Committee</h3>
+      <br/>
+      </div>
+      <div>
+				<table class="table">
+					<tbody><tr>
+                    <td><b>General Chairs:</b></td>
+                    <td>
+                      <span style="color:black"> Xingliang Yuan, The University of Melbourne
+                        <br> Guangdong Bai, The University of Queensland
+                        <br> Marthie Grobler, CSIRO's Data61</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><b>Program Committee Chairs:</b></td>
+                    <td>
+                      <span style="color:black">
+                        Yanick Fratantonio, Google<br>
+			Tiffany Bao, Arizona State University
+                      </td>
+                  </tr>
+
+                  <tr>
+                   <td><b>Local Chairs:</b></td>
+                  <td>
+                    <span style="color:black">
+                     Leo Yu Zhang, Griffith University<br>
+		     Ernest Foo, Griffith University
+		    </span>
+                    </td>
+                </tr>
+
+		<tr>
+              <td><b>Publication Co-Chair:</b></td>
+              <td>
+                <span style="color:black">
+                     Yifeng Zheng, The Hong Kong Polytechnic University<br>
+		     Naipeng Dong, The University of Queensland
+		    </span>
+                </td>
+              </tr>
+
+	      <td><b>Publicity Co-Chair:</b></td>
+              <td>
+                <span style="color:black">
+                     Hyoungshick Kim, Sungkyunkwan University<br>
+		     Ming Xu, National University of Singapore<br>
+		     Hammond Pearce, University of New South Wales	
+		    </span>
+                </td>
+              </tr>
+
+	      <tr>
+              <td><b>Finance Chair:</b></td>
+              <td>
+                <span style="color:black">Maggie Liu, The Royal Melbourne Institute of Technology</span>
+                </td>
+              </tr>
+						
+              <tr>
+              <td><b>Website Chair:</b></td>
+              <td>
+                <span style="color:black">Yujin Huang, The University of Melbourne</span>
+                </td>
+              </tr>
+
+      </tbody></table>
+			</div>
+      <br/>
+<div class="text-center">    <h3> Program Committee </h3> </div>
+      <div>
+        <table class="table">
+
+
+<tbody>
+        <tr>
+    <td>Abdullah Imran</td>
+    <td> <span style="color:black">Purdue University</span></td>
+</tr>
+<tr>
+    <td>Adam Oest</td>
+    <td>Amazon</td>
+</tr>
+<tr>
+    <td>Adrian Coleşa</td>
+    <td>Technical University of Cluj-Napoca, Romania</td>
+</tr>
+<tr>
+    <td>Alessandro Brighente</td>
+    <td>University of Padova</td>
+</tr>
+<tr>
+    <td>Alessandro Sorniotti</td>
+    <td>IBM Research Europe</td>
+</tr>
+<tr>
+    <td>Amin Kharraz</td>
+    <td>Florida International University</td>
+</tr>
+<tr>
+    <td>Andre Gregio</td>
+    <td>Federal University of Parana (UFPR)</td>
+</tr>
+<tr>
+    <td>Andrea Lanzi</td>
+    <td>University of Milan</td>
+</tr>
+<tr>
+    <td>Andrea Mambretti</td>
+    <td>IBM Research Europe - Zurich</td>
+</tr>
+<tr>
+    <td>Andrea Marcelli</td>
+    <td>Data scientist, Cisco Talos</td>
+</tr>
+<tr>
+    <td>Andrea Oliveri</td>
+    <td>EURECOM</td>
+</tr>
+<tr>
+    <td>Anita Nikolich</td>
+    <td>University of Illinois - Urbana Champaign</td>
+</tr>
+<tr>
+    <td>Antonio Bianchi</td>
+    <td>Purdue University</td>
+</tr>
+<tr>
+    <td>Babak Amin Azad</td>
+    <td>Cloudflare</td>
+</tr>
+<tr>
+    <td>Balakrishnan Chandrasekaran</td>
+    <td>Vrije Universiteit Amsterdam</td>
+</tr>
+<tr>
+    <td>Bang Wu</td>
+    <td>RMIT</td>
+</tr>
+<tr>
+    <td>Behzad Ousat</td>
+    <td>Florida International University</td>
+</tr>
+<tr>
+    <td>Ben Gras</td>
+    <td>Intel Corporation</td>
+</tr>
+<tr>
+    <td>Bo Feng</td>
+    <td>Zhejiang University</td>
+</tr>
+<tr>
+    <td>Christophe Hauser</td>
+    <td>Dartmouth College</td>
+</tr>
+<tr>
+    <td>Clement Fung</td>
+    <td>Carnegie Mellon University</td>
+</tr>
+<tr>
+    <td>Daniel Arp</td>
+    <td>TU Wien</td>
+</tr>
+<tr>
+    <td>Diksha Goel</td>
+    <td>CSIRO's Data61, Australia</td>
+</tr>
+<tr>
+    <td>Eleonora Losiouk</td>
+    <td>University of Padua</td>
+</tr>
+<tr>
+    <td>Elias Athanasopoulos</td>
+    <td>University of Cyprus</td>
+</tr>
+<tr>
+    <td>Emanuele Cozzi</td>
+    <td>Microsoft</td>
+</tr>
+<tr>
+    <td>Evangelos Markatos</td>
+    <td>FORTH and University of Crete</td>
+</tr>
+<tr>
+    <td>Fabian Schwarz</td>
+    <td>NVIDIA</td>
+</tr>
+<tr>
+    <td>Faysal Hossain Shezan</td>
+    <td>University of Texas at Arlington</td>
+</tr>
+<tr>
+    <td>Fei Zuo</td>
+    <td>University of Central Oklahoma</td>
+</tr>
+<tr>
+    <td>Flavio Toffalini</td>
+    <td>RUB</td>
+</tr>
+<tr>
+    <td>Florian Hahn</td>
+    <td>University of Twente</td>
+</tr>
+<tr>
+    <td>Georgios Smaragdakis</td>
+    <td>Delft University of Technology</td>
+</tr>
+<tr>
+    <td>Giada Stivala</td>
+    <td>CISPA Helmholtz Center for Information Security</td>
+</tr>
+<tr>
+    <td>Gianluca Stringhini</td>
+    <td>Boston University</td>
+</tr>
+<tr>
+    <td>Giovanni Lagorio</td>
+    <td>University of Genoa</td>
+</tr>
+<tr>
+    <td>Hayretdin Bahsi</td>
+    <td>School of Informatics Computing and Cyber Systems, Northern Arizona University, USA</td>
+</tr>
+<tr>
+    <td>Hervé Debar</td>
+    <td>Télécom SudParis</td>
+</tr>
+<tr>
+    <td>Hongsheng Hu</td>
+    <td>University of Newcastle</td>
+</tr>
+<tr>
+    <td>Huaming Chen</td>
+    <td>The University of Sydney</td>
+</tr>
+<tr>
+    <td>Huayi Duan</td>
+    <td>ETH Zurich</td>
+</tr>
+<tr>
+    <td>Hyungsub Kim</td>
+    <td>Indiana University Bloomington</td>
+</tr>
+<tr>
+    <td>Ilya Grishchenko</td>
+    <td>University of Toronto</td>
+</tr>
+<tr>
+    <td>Imtiaz Karim</td>
+    <td>Purdue University</td>
+</tr>
+<tr>
+    <td>Iskander Sanchez-Rola</td>
+    <td>Norton</td>
+</tr>
+<tr>
+    <td>Jie Zhou</td>
+    <td>The George Washington University</td>
+</tr>
+<tr>
+    <td>Jing Liu</td>
+    <td>MPI-SP & UC Irvine</td>
+</tr>
+<tr>
+    <td>Jiyong Jang</td>
+    <td>IBM Research</td>
+</tr>
+<tr>
+    <td>Juan Tapiador</td>
+    <td>University Carlos III of Madrid</td>
+</tr>
+<tr>
+    <td>Kangjie Lu</td>
+    <td>University of Minnesota</td>
+</tr>
+<tr>
+    <td>Kevin Borgolte</td>
+    <td>Ruhr University Bochum</td>
+</tr>
+<tr>
+    <td>Konrad Rieck</td>
+    <td>BIFOLD & TU Berlin</td>
+</tr>
+<tr>
+    <td>Kyle Zeng</td>
+    <td>Arizona State University</td>
+</tr>
+<tr>
+    <td>Leon Trampert</td>
+    <td>CISPA Helmholtz Center for Information Security</td>
+</tr>
+<tr>
+    <td>Lorenzo Binosi</td>
+    <td>Politecnico di Milano</td>
+</tr>
+<tr>
+    <td>Luca Demetrio</td>
+    <td>University of Genoa</td>
+</tr>
+<tr>
+    <td>Luca Mariot</td>
+    <td>University of Twente</td>
+</tr>
+<tr>
+    <td>Mabon Ninan</td>
+    <td>Texas A&M University</td>
+</tr>
+<tr>
+    <td>Magnus Almgren</td>
+    <td>Chalmers University of Technology</td>
+</tr>
+<tr>
+    <td>Manuel Egele</td>
+    <td>Boston University</td>
+</tr>
+<tr>
+    <td>Marcel Busch</td>
+    <td>EPFL</td>
+</tr>
+<tr>
+    <td>Marco Casagrande</td>
+    <td>N/A</td>
+</tr>
+<tr>
+    <td>Marco Cova</td>
+    <td>Wiz</td>
+</tr>
+<tr>
+    <td>Marcus Botacin</td>
+    <td>Texas A&M University</td>
+</tr>
+<tr>
+    <td>Mario Polino</td>
+    <td>N/A</td>
+</tr>
+<tr>
+    <td>Marius Muench</td>
+    <td>University of Birmingham</td>
+</tr>
+<tr>
+    <td>Martina Lindorfer</td>
+    <td>TU Wien</td>
+</tr>
+<tr>
+    <td>Matteo Große-Kampmann</td>
+    <td>Rhine-Waal University of Applied Sciences</td>
+</tr>
+<tr>
+    <td>Merve Sahin</td>
+    <td>SAP</td>
+</tr>
+<tr>
+    <td>Michalis Polychronakis</td>
+    <td>Stony Brook University</td>
+</tr>
+<tr>
+    <td>Michele Carminati</td>
+    <td>Politecnico di Milano</td>
+</tr>
+<tr>
+    <td>Moritz Lipp</td>
+    <td>AWS</td>
+</tr>
+<tr>
+    <td>Moritz Schloegel</td>
+    <td>Arizona State University</td>
+</tr>
+<tr>
+    <td>Muslum Ozgur Ozmen</td>
+    <td>Arizona State University</td>
+</tr>
+<tr>
+    <td>Nathan Burow</td>
+    <td>MIT Lincoln Laboratory</td>
+</tr>
+<tr>
+    <td>Nilo Redini</td>
+    <td>N/A</td>
+</tr>
+<tr>
+    <td>Octavian Suciu</td>
+    <td>Google Research</td>
+</tr>
+<tr>
+    <td>Peng Jiang</td>
+    <td>Southeast University</td>
+</tr>
+<tr>
+    <td>Qinhong Jiang</td>
+    <td>The Hong Kong Polytechnic University</td>
+</tr>
+<tr>
+    <td>Roland Yap</td>
+    <td>National University of Singapore</td>
+</tr>
+<tr>
+    <td>Seungwon Shin</td>
+    <td>KAIST</td>
+</tr>
+<tr>
+    <td>Shangqi Lai</td>
+    <td>CSIRO's Data61</td>
+</tr>
+<tr>
+    <td>Shirin Nilizadeh</td>
+    <td>The University of Texas at Arlington</td>
+</tr>
+<tr>
+    <td>Shuang Hao</td>
+    <td>University of Texas at Dallas</td>
+</tr>
+<tr>
+    <td>Shuo Wang</td>
+    <td>Shanghai Jiao Tong University</td>
+</tr>
+<tr>
+    <td>Silvia Sebastián</td>
+    <td>CISPA</td>
+</tr>
+<tr>
+    <td>Simone Aonzo</td>
+    <td>Eurecom</td>
+</tr>
+<tr>
+    <td>Song Fang</td>
+    <td>University of Oklahoma</td>
+</tr>
+<tr>
+    <td>Srdjan Matic</td>
+    <td>IMDEA Software Institute</td>
+</tr>
+<tr>
+    <td>Stefano Zanero</td>
+    <td>Politecnico di Milano</td>
+</tr>
+<tr>
+    <td>Sébastien Bardin</td>
+    <td>CEA List & Université Paris-Saclay</td>
+</tr>
+<tr>
+    <td>Tanusree Sharma</td>
+    <td>Pennsylvania State University</td>
+</tr>
+<tr>
+    <td>Thomas Schreck</td>
+    <td>Munich University of Applied Sciences</td>
+</tr>
+<tr>
+    <td>Thorsten Eisenhofer</td>
+    <td>BIFOLD & TU Berlin</td>
+</tr>
+<tr>
+    <td>Tianshuo Cong</td>
+    <td>Tsinghua University</td>
+</tr>
+<tr>
+    <td>Vasileios Kemerlis</td>
+    <td>Brown University</td>
+</tr>
+<tr>
+    <td>Vasilios Mavroudis</td>
+    <td>Alan Turing Institute</td>
+</tr>
+<tr>
+    <td>Viet Vo</td>
+    <td>Swinburne University of Technology</td>
+</tr>
+<tr>
+    <td>Vladislav Mladenov</td>
+    <td>Ruhr University Bochum</td>
+</tr>
+<tr>
+    <td>Xabier Ugarte-Pedrero</td>
+    <td>Cisco Systems</td>
+</tr>
+<tr>
+    <td>Xiang Li</td>
+    <td>Nankai University</td>
+</tr>
+<tr>
+    <td>Xiapu Luo</td>
+    <td>The Hong Kong Polytechnic University</td>
+</tr>
+<tr>
+    <td>Ye Dong</td>
+    <td>National University of Singapore</td>
+</tr>
+<tr>
+    <td>Yigitcan Kaya</td>
+    <td>UC Santa Barbara</td>
+</tr>
+<tr>
+    <td>Yinzhi Cao</td>
+    <td>Johns Hopkins University</td>
+</tr>
+<tr>
+    <td>Yueqi Chen</td>
+    <td>University of Colorado Boulder</td>
+</tr>
+<tr>
+    <td>Yuhao Wu</td>
+    <td>Washington University in St. Louis</td>
+</tr>
+<tr>
+    <td>Yujin Huang</td>
+    <td>The University of Melbourne</td>
+</tr>
+<tr>
+    <td>Zheng Li</td>
+    <td>Shandong University</td>
+</tr>
+<tr>
+    <td>Zhuo Zhang</td>
+    <td>Purdue University</td>
+</tr>
+<tr>
+    <td>Ziming Zhao</td>
+    <td>Northeastern University</td>
+</tr>
+<tr>
+    <td>Zhibo Eric Sun</td>
+    <td>Drexel University</td>
+</tr>
+</tbody>
+</table>
+ </div>
+<br/>
+
+<div class="text-center"> <h3>Steering Committee</h3></div>
+<br/>
+<div>
+  <table class="table">
+              <tbody>
+
+	      <tr>
+                <td>Davide Balzarotti</td>
+                <td>
+                  <span style="color:black"> Eurecom Graduate School and Research Center </span>
+                  </td>
+              </tr>
+                
+              <tr>
+                <td>Yousra Aafer</td>
+                <td>
+                  <span style="color:black"> The University of Waterloo </span>
+                  </td>
+              </tr>
+		<tr>
+                <td>Leyla Bilge  </td>
+                <td>
+                  <span style="color:black"> NortonLifeLock Research Group </span>
+                  </td>
+              </tr>
+	     <tr>
+                <td>Tudor Dumitras</td>
+                <td>
+                  <span style="color:black"> University of Maryland </span>
+                  </td>
+              </tr>
+	      <tr>
+                <td>Manuel Egele</td>
+                <td>
+                  <span style="color:black"> Boston University </span>
+                  </td>
+              </tr>
+		<tr>
+                <td>Thorsten Holz</td>
+                <td>
+                  <span style="color:black"> CISPA Helmholtz Center for Information Security </span>
+                  </td>
+              </tr>
+		<tr>
+                  <td>Christian Rossow</td>
+                  <td>
+                    <span style="color:black">	CISPA Helmholtz Center for Information Security</span>
+                  </td>
+                </tr>
+	    <tr>
+                <td>Mathias Payer </td>
+                <td>
+                  <span style="color:black"> École polytechnique fédérale de Lausanne </span>
+                  </td>
+              </tr><tr>
+                <td>Michalis Polychronakis </td>
+                <td>
+                  <span style="color:black">Stony Brook University</span>
+                  </td>
+              </tr>
+              <tr>
+                <td>Angelos Stavrou </td>
+                <td>
+                  <span style="color:black"> Virginia Tech </span>
+                  </td>
+              </tr>
+               <tr>
+                <td>Zhiqiang Lin</td>
+                <td>
+                  <span style="color:black">  The Ohio State University </span>
+                  </td>
+              </tr>
+  </tbody></table>
+</div>
+
+
+
+         <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
+      <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
+              <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
+      <div style="display: flex; align-items: center; justify-content: center;">
+                        <figure style="margin-right: -15px;">
+                <a href="https://www.unimelb.edu.au/" target="_blank">
+                <img src="images/unimelb_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                </a>
+                </figure>
+
+		<figure style="margin-right: -15px;">
+                <a href="https://www.uq.edu.au/" target="_blank">
+                <img src="images/uq_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                </a>
+                </figure>
+	      
+                <figure style="margin-right: -15px;">
+                  <a href="https://www.griffith.edu.au/" target="_blank">
+                  <img src="images/griffith_logo.png"  class="img-responsive" alt="polyu" style="max-width: 250px;">
+                  </a>
+                  </figure>
+            </div>
+
+<!--             <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Diamond </p>
+
+           <div style="display: flex; justify-content: center;">
+            <div style="display: inline-block; width: 35%; box-sizing: border-box; padding: 10px; ">
+              <a href="https://www.kaust.edu.sa/" target="_blank">
+              <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%;">
+              </a>
+            </div>
+          </div>
+
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Platinum </p>
+
+          <div style="display: flex; justify-content: center;">
+           <div style="display: inline-block; width: 35%; box-sizing: border-box; padding: 10px; ">
+             <a href="https://www.google.com/" target="_blank">
+             <img src="images/Google-Logo.png" alt="Google" style="max-width: 100%;">
+             </a>
+           </div>
+         </div>  -->
+      </div>
+        <hr />
+      </div>
+
+
+</body>
+</html>
+
+
+
+
+

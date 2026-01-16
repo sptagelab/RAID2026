@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>RAID 2025 – The 28th International Symposium on Research in Attacks, Intrusions and Defenses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
+
+  <style>
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 27px;
+      text-transform: none;
+      color: #303030;
+      align-items: center;
+      justify-content: center;
+      font-family: "Lato", sans-serif;
+      transition: background-color .5s;
+    }
+
+    h2 {
+      font-size: 24px;
+      /* text-transform: uppercase; */
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .jumbotron {
+      background-color: white;
+      color: #fff;
+      padding: 80px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+
+    .container-fluid {
+      padding: 50px 50px;
+      max-width: 1100px;
+
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .logo-small {
+      color: white;
+      font-size: 50px;
+    }
+
+    .logo {
+      color: black;
+      font-size: 200px;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: black;
+    }
+
+    .carousel-indicators li {
+      border-color: white;
+    }
+
+    .carousel-indicators li.active {
+      background-color: black;
+    }
+
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+
+    .item span {
+      font-style: normal;
+    }
+
+    .panel {
+      border: 1px solid white;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    }
+
+    .panel-footer .btn:hover {
+      border: 1px solid white;
+      background-color: #fff !important;
+      color: white;
+    }
+
+    .panel-heading {
+      color: black !important;
+      background-color: white !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+      background-color: white !important;
+    }
+
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: white;
+      color: #fff;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: white;
+      z-index: 999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      text-align:center;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: black !important;
+    }
+
+    a.nav-item.nav-link.active {
+      color: white;
+      /*background-color: #b86d69;*/
+      background-color: #4A7FB5;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: black !important;
+      /*background-color: #e1adaa !important;*/
+      background-color: #c4d6e5 !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+
+    #myBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: black;
+      background: white;
+      width: 50px;
+      height: 50px;
+      display: block;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      -webkit-border-radius: 35px;
+      -moz-border-radius: 35px;
+      border-radius: 35px;
+      display: none;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+
+    #myBtn:hover {
+      background-color: #b86d69;
+    }
+
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+
+
+    .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+    }
+
+    .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+
+    .button_covid {
+      background-color: #a53013;
+      box-shadow: 0 5px 0 #a53013;
+      color: white;
+      padding: 1em 1.5em;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .to_right {
+    width: 0;
+    height: 0;
+    border-left: 10px solid #cccf;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    }
+
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    }
+
+    /*-----------------------------------------*/
+    .sidebar {
+			position         : fixed;
+			z-index          : 9999;
+			right            : 0;
+			bottom           : 0;
+			padding          : 1.5% 1% 1.5%;
+			box-shadow       : 0 4px 38px 0 rgba(255, 96, 115, 0.2);
+			border-radius    : 20px 0 0 20px;
+			background-color : #f5eced;
+      opacity: 0.5;
+		}
+    .sidebar:hover{
+      opacity: 1;
+    }
+
+		.sidebar > div {
+			cursor     : pointer;
+			text-align : center;
+		}
+		.sidebar > div img {
+			width : 20%;
+		}
+		.sidebar > div h3 {
+			font-size : 100%;
+		}
+
+    @media only screen and (max-width: 768px) {
+
+    .sidebar{
+      opacity: 0.1;
+    }
+
+		.sidebar > div img {
+			width : 15%;
+		}
+		.sidebar > div h3 {
+			font-size : 75%;
+		}
+
+}
+
+
+
+  </style>
+</head>
+
+
+<header class="text-center">
+  <div><br></div>
+  <nav id="navbar">
+    <img src="images/logo_2025.png" alt="Logo image" width="120" height="52">
+  </nav>
+  <div><br></div>
+</header>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></button>
+
+
+  <div>
+    <nav class="navbar navbar-default navbar-absolute-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav  mr-auto" style="float: none;display: inline-block;">
+            <li><a  href="index.html">Home</a></li>
+            <!-- <li><a href="instructions.html">Instructions for Authors</a></li> -->
+            <li><a href="call.html">Call for Papers</a></li>
+	    <li><a href="call_poster.html">Call for Posters</a></li>
+            <li><a class="nav-item nav-link active" href="venue.html">Venue & Travel</a></li>
+            <!-- <li><a href="social.html">Social Activ,ities</a></li> -->
+            <li><a href="program.html">Program</a></li>
+	          <!--li><a href="booklet.html" target="_blank">Brochure</a></li-->
+            <!-- <li><a href="accepted.html">Accepted Papers</a></li> -->
+             <li><a href="accepted_open.html">Accepted Papers</a></li>
+
+            <li><a href="awards.html">Awards</a></li>
+
+            <li><a href="registration.html">Registration</a></li> 
+            <li><a href="committees.html">Committees</a></li>
+<!--             <li><a href="sponsorship.html"> Sponsorship</a></li> -->
+            <li><a href="contact.html"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center">
+      <div id="carouselContainer" style="display: flex; justify-content: center;">
+      <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/bg1_resized_new.jpg"  alt="Image 1">
+          </div>
+      
+          <div class="item">
+            <img src="images/bg2_resized.jpg"  alt="Image 2" >
+          </div>
+      
+          <div class="item">
+            <img src="images/bg3_resized.jpg"  alt="Image 3">
+          </div>
+      
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div>
+      <!-- Container (About Section) -->
+      <div id="social" class="container-fluid">
+        <div class="text-center">
+          <h2>Venue & Travel</h2>
+
+        </div>
+
+    <div id="aa"></div>
+        <div class="text-center">
+          <h3>Conference Venue</h3>
+        </div>
+        <br>
+
+        <div align="justify" class="responsive">
+          <p> The 28th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2025) will be held at the <b>Ballrooms and Promenade Room, Hilton Surfers Paradise Hotel & Residences, 6 Orchid Ave, Surfers Paradise QLD 4215</b>.
+          </p>
+	<div class="map-responsive">
+	     <iframe 
+	        src="https://www.google.com/maps?q=Hilton+Surfers+Paradise+Hotel+%26+Residences&output=embed"
+	        width="100%" 
+	        height="400" 
+	        style="border:0;" 
+	        allowfullscreen="" 
+	        referrerpolicy="no-referrer-when-downgrade">
+	    </iframe>
+	</div>
+
+		
+          <h3><b>How to reach Hilton Surfers Paradise Hotel & Residences</b></h3>
+		<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-size: 15px;">
+  <thead>
+    <tr style="background-color: #003366; color: white;">
+      <th style="padding: 12px; text-align: left;">🚍 Option</th>
+      <th style="padding: 12px; text-align: left;">✈️ From Brisbane Airport (BNE)</th>
+      <th style="padding: 12px; text-align: left;">✈️ From Gold Coast Airport (OOL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #ffffff; vertical-align: top;">
+      <td style="padding: 12px;"><b>🚆 Public Transport:<br>Train + Bus + Light Rail</b></td>
+      <td style="padding: 12px;">
+        1. Walk to Domestic Airport Station<br>
+        2. Take <a href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/airport-line" target="_blank" style="color: #007BFF;">Airport Line</a> to Eagle Junction<br>
+        3. Transfer to <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/r583" target="_blank" style="color: #007BFF;">Bus R583</a> and ride to Banoon<br>
+        4. Transfer to <a href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/gold-coast-line" target="_blank" style="color: #007BFF;">Gold Coast Line</a><br>
+        5. Ride to Helensvale<br>
+        6. Take <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a> to <b>Cavill Avenue</b><br>
+        7. Walk to hotel (~3 min, 220m)<br><br>
+        ⏱️ Duration: ~3 hrs  💰 Cost: AUD 20<br>
+        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJb5rRQ__hk2sREHAg11ujAg8&start=Brisbane+Airport+%28BNE%29%3B+Airport+Drive%2C+Brisbane+Airport+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+      </td>
+      <td style="padding: 12px;">
+        1. Walk outside the terminal<br>
+        2. Board <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/777" target="_blank" style="color: #007BFF;">Bus 777</a> to Broadbeach South<br>
+        3. Transfer to the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a><br>
+        4. Ride G:link for 5 stops<br>
+        5. Disembark at <b>Cavill Avenue</b><br>
+        6. Walk to hotel (~3 min, 220m)<br><br><br>
+        ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 0.5<br>
+        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJaaHMXOcBkWsRcHAg11ujAg8&start=Gold+Coast+Airport+%28OOL%29%3B+Eastern+Avenue%2C+Bilinga+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f5f9fc; vertical-align: top;">
+      <td style="padding: 12px;"><b>🚗 Uber / Rideshare</b></td>
+      <td style="padding: 12px;">
+        1. Request an Uber or taxi from the rideshare area<br>
+        2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
+        ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 160–220<br>
+        📍<a href="https://www.google.com/maps/dir/Brisbane+Airport+(BNE),+Airport+Drive,+Brisbane+Airport+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-27.6979237,152.889708,10z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b93e1ff43d19a6f:0xf02a35bd7207010!2m2!1d153.1236707!2d-27.3946264!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
+      </td>
+      <td style="padding: 12px;">
+        1. Request an Uber or taxi from the rideshare area<br>
+        2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
+        ⏱️ Duration: ~50 min  💰 Cost: AUD 50–90<br>
+        📍<a href="https://www.google.com/maps/dir/Gold+Coast+Airport+(OOL),+Eastern+Avenue,+Bilinga+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-28.090738,153.3556261,12z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b9101e75ccca169:0xf02a35bd7207070!2m2!1d153.5068408!2d-28.1631687!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<h3 id="skypoint"><b>How to reach Sky Point from Hilton Surfers Paradise (The Conference Venue)</b></h3>
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-size: 15px;">
+  <thead>
+    <tr style="background-color: #003366; color: white;">
+      <th style="padding: 12px; text-align: left;">🚍 Option</th>
+      <th style="padding: 12px; text-align: left;">📋 Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #ffffff; vertical-align: top;">
+      <td style="padding: 12px;"><b>🚶‍♀️ Walk</b></td>
+      <td style="padding: 12px;">
+        1. Exit Hilton Surfers Paradise onto Orchid Avenue.<br>
+        2. Head south on Orchid Avenue towards Cavill Ave.<br>
+        3. Turn right towards Surfers Paradise Blvd and continue straight for about 100 meters.<br>
+        4. You’ll arrive at <a href="https://www.skypoint.com.au/" target="_blank" style="color: #007BFF;">Sky Point</a>.<br><br>
+        ⏱️ Duration: ~10 minutes<br>
+		📍<a href="https://www.google.com/maps/dir/Hilton+Surfers+Paradise+Hotel+%26+Residences,+6+Orchid+Ave,+Surfers+Paradise+QLD+4217/Sky+Point,+Surfers+Paradise+QLD/@-28.0040391,153.4274433,17z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!1m5!1m1!1s0x6b91050073d29537:0x3ca79c5ea7842809!2m2!1d153.4301393!2d-28.0067683!3e2?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
+      </td>
+    </tr>
+    <tr style="background-color: #f5f9fc; vertical-align: top;">
+      <td style="padding: 12px;"><b>🚆 Public Transport:<br>Light Rail</b></td>
+      <td style="padding: 12px;">
+        1. Walk to Cavill Avenue Station (approx. 3 min).<br>
+        2. Take the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a> toward Broadbeach South.<br>
+        3. Travel 1 stop to <b>Surfers Paradise Station</b>.<br>
+        4. Walk to SkyPoint (located at Q1 Building, next to the station).<br><br>
+        ⏱️ Duration: ~6 minutes  💰 Cost: AUD 0.5<br>
+        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=5%3A05pm&startLocationId=ST%3Aplace_cavsta&start=Cavill+Avenue+station&endLocationId=ST%3Aplace_surstn&end=Surfers+Paradise+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+			
+<h3 id="seaworldconfcenter"><b>How to reach Sea World Resort Conference Centre</b></h3>
+<img  src="images/seaworld.png" alt="Sea World Theme Park & Dinner Venue" style="width: 100%;">
+			
+
+    <!-- <h2><b>Where to stay</b></h2>
+    <ul>
+        <li>
+            <p>
+                <b>Hotel Giotto ***</b><br>
+                <b>Address: </b>Piazzale Pontecorvo, 33 - 35121 Padova<br>
+                <b>Phone:</b> Tel. +39 049 8761845<br>
+                <b>E-mail:</b>&#160; <a href="mailto:info@hotelgiotto.com">info@hotelgiotto.com</a><br>
+                <b>Web:</b>&#160;  <a href="http://www.hotelgiotto.com/" title="http://www.hotelgiotto.com/">http://www.hotelgiotto.com/</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <b>Hotel Majestic Toscanelli ****</b><br>
+                <b>Address: </b>Via dell'Arco, 2 - 35122 Padova<br>
+                <b>Phone:</b> Tel. +39 049 663244<br>
+                <b>E-mail:</b>&#160; <a href="mailto:majestic@toscanelli.com">majestic@toscanelli.com</a><br>
+                <b>Web:</b>&#160;  <a href="http://www.toscanelli.com/" title="http://www.toscanelli.com/">http://www.toscanelli.com/</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <b>Hotel Igea ***</b><br>
+                <b>Address: </b>Via Ospedale, 87 - 35128 Padova<br>
+                <b>Phone:</b>&#160; Tel. + 39 049 8750577<br>
+                <b>E-Mail: </b> <a href="mailto:info@hoteligea.it">info@hoteligea.it</a><br>
+                <b>Web:&#160; </b><a href="http://www.hoteligea.it/" title="http://www.hoteligea.it/">http://www.hoteligea.it/</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Palazzo Bovio</strong> <br>
+                <b>Address: </b>Via Belludi, 37 - 35123 Padova<br>
+                <b>Phone:</b> Tel. +39 342 1452381<br>
+                <b>E-mail: </b><a href="mailto:info@palazzobovio.com"> info@palazzobovio.com</a><br>
+                <b>Web: </b><a href="https://www.palazzobovio.com/" title="https://www.palazzobovio.com/">https://www.palazzobovio.com/</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Hotel Casa del Pellegrino **</strong> <br>
+                <b>Address: </b>Via M. Cesarotti, 21 - 35123 Padova<br>
+                <b>Phone: </b>Tel. +39 049 8239711<br>
+                <b>E-Mail: </b><a href="mailto:info@casadelpellegrino.com">info@casadelpellegrino.com</a><br>
+                <b>Web: </b><a href="http://www.casadelpellegrino.com/" title="http://www.casadelpellegrino.com/">http://www.casadelpellegrino.com/</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <strong>Hotel Eden **</strong> <br>
+                <b>Address: </b>Via C. Battisti, 255 - 35121 Padova<br>
+                <b>Phone: </b>Tel. +39 049 650484<br>
+                <b>E-Mail: </b><a href="mailto:info@hoteledenpadova.it">info@hoteledenpadova.it</a> <br>
+                <b>Web: </b><a href="http://www.hoteledenpadova.it/" title="http://www.hoteledenpadova.it/">http://www.hoteledenpadova.it/</a>
+            </p>
+        </li>
+    </ul> 
+        </div>
+      </div>
+      
+    </div>
+
+<!--          <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
+      <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
+              <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
+      <div style="display: flex; align-items: center; justify-content: center;">
+                <figure style="margin-right: 20px;">
+                <a href="https://www.unipd.it/" target="_blank">
+                <img src="images/logo_unipd.png"  class="img-responsive" alt="polyu" style="max-width: 400px;">
+                </a>
+                </figure>
+                <figure style="margin-right: 20px;">
+                  <a href="https://www.math.unipd.it/" target="_blank">
+                  <img src="images/mathunipd.jpg"  class="img-responsive" alt="polyu" style="max-width: 300px;">
+                  </a>
+                  </figure>
+            </div>
+
+            <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Diamond </p>
+
+           <div style="display: flex; justify-content: center;">
+            <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
+              <a href="https://www.kaust.edu.sa/" target="_blank">
+              <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%;">
+              </a>
+            </div>
+          </div>
+
+
+          <p style="font-weight:bold; font-size:24px; text-align:center;">Platinum </p>
+
+          <div style="display: flex; justify-content: center;">
+           <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
+             <a href="https://www.google.com/" target="_blank">
+             <img src="images/Google-Logo.png" alt="Google" style="max-width: 100%;">
+             </a>
+           </div>
+         </div> 
+      </div>
+        <hr /> -->
+      </div>
+
+<script>
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    var rootElement = document.documentElement;
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+	// Allowed pages list
+        const allowedPages = [
+          "index.html",
+          "committees.html",
+          "contact.html",
+	  	  "call.html",
+	      "call_poster.html",
+          "venue.html",
+	      "registration.html",
+		  "accepted_open.html",
+			"program.html",
+			"awards.html"
+	      
+      ];
+      // Extract the current page name from the URL
+      const currentPage = window.location.pathname.split("/").pop();
+
+      // Redirect to index.html if the current page is not in the allowed list
+      if (!allowedPages.includes(currentPage) && currentPage !== "") {
+          window.location.href = "https://raid2025.github.io/index.html";
+      }
+  </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
