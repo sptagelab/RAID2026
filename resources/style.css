@@ -35,8 +35,8 @@ body {
     }
 
     .container-fluid {
-    padding:50px 50px;
-    max-width: 1100px;
+    padding:40px 40px;
+    max-width: 1350px;
 
     }
 
@@ -239,6 +239,199 @@ body {
       height: auto;
     }
 
+    .hero {
+      background: #f7f9fb;
+      border: 1px solid #e6edf2;
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 28px;
+    }
+
+    .hero-title {
+      font-size: 34px;
+      font-weight: 700;
+      margin: 6px 0 8px;
+      color: #1f2a37;
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      color: #4b5563;
+      margin-bottom: 18px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fde7e7;
+      color: #8e1b1b;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.3px;
+    }
+
+    .cta-buttons .btn {
+      font-size: 16px;
+      margin: 8px 6px 0 0;
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .hero-logo {
+      max-width: 220px;
+      margin: 6px auto 12px;
+      display: block;
+    }
+
+    .btn-raid {
+      background-color: #c62828;
+      border-color: #c62828;
+      color: #fff;
+    }
+
+    .btn-raid:hover,
+    .btn-raid:focus {
+      background-color: #b71c1c;
+      border-color: #b71c1c;
+      color: #fff;
+    }
+
+    .btn-raid-outline {
+      background: #fff;
+      border: 2px solid #f2c7c7;
+      color: #1f2a37;
+    }
+
+    .btn-raid-outline:hover,
+    .btn-raid-outline:focus {
+      background: #fde7e7;
+      color: #1f2a37;
+    }
+
+    .info-grid {
+      margin-bottom: 18px;
+    }
+
+    .info-card {
+      background: #fff;
+      border: 1px solid #e6edf2;
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .info-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      color: #1f2a37;
+    }
+
+    .info-meta {
+      color: #4b5563;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 6px 0 10px;
+      color: #1f2a37;
+    }
+
+    .section-lead {
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+
+    .key-points {
+      padding-left: 18px;
+      color: #374151;
+    }
+
+    .quick-links {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .quick-links li {
+      margin-bottom: 8px;
+    }
+
+    .quick-links a {
+      color: #1f4f8a;
+      text-decoration: none;
+    }
+
+    .quick-links a:hover {
+      text-decoration: underline;
+    }
+
+    .organizers {
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    .organizers-title {
+      font-weight: 700;
+      font-size: 22px;
+      color: #024852;
+      margin-bottom: 14px;
+    }
+
+    .organizers-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .organizers-logos img {
+      max-width: 240px;
+    }
+
+    .award-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .award-card {
+      flex: 1 1 320px;
+      max-width: 520px;
+      background: #fff;
+      border: 1px solid #e6edf2;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+
+    .award-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: #1f2a37;
+    }
+
+    .award-paper {
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+
+    .award-authors {
+      color: #4b5563;
+      margin: 0;
+      font-size: 14px;
+    }
+
 
     @keyframes slide {
       0% {
@@ -278,4 +471,12 @@ body {
       .carousel-indicators {
             display: none; /* Hides the three dots */
         }
+
+      .hero-title {
+        font-size: 28px;
+      }
+
+      .organizers-logos img {
+        max-width: 200px;
+      }
 }
