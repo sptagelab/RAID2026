@@ -55,10 +55,11 @@
       </div>
     </div>
 
-    <div id="call" class="container-fluid">
+    <div id="call" class="container-body">
       <div class="text-center">
         <h2>Call for Papers</h2>
         <p class="section-lead">The 29th International Symposium on Research in Attacks, Intrusions and Defenses</p>
+        <p class="section-lead">We are soliciting research papers on topics covering all well-motivated computer security problems. We care about techniques that identify new real-world threats, techniques to prevent them, to detect them, to mitigate them or to assess their prevalence and their consequences. Measurement papers are encouraged, as well as papers offering public access to new tools or datasets, or experience papers that clearly articulate important lessons learned</p>
       </div>
 
       <!-- Important Dates Section -->
@@ -70,23 +71,30 @@
             <span>TBD</span>
           </div>
           <div class="col-sm-6 col-md-3" style="margin-bottom: 15px;">
-            <strong style="display: block; margin-bottom: 5px;">Notification</strong>
+            <strong style="display: block; margin-bottom: 5px;">Notification to Authors</strong>
             <span>TBD</span>
           </div>
           <div class="col-sm-6 col-md-3" style="margin-bottom: 15px;">
-            <strong style="display: block; margin-bottom: 5px;">Camera-ready</strong>
+            <strong style="display: block; margin-bottom: 5px;">Camera-ready Deadline</strong>
             <span>TBD</span>
           </div>
           <div class="col-sm-6 col-md-3" style="margin-bottom: 15px;">
-            <strong style="display: block; margin-bottom: 5px;">Conference</strong>
+            <strong style="display: block; margin-bottom: 5px;">Conference Dates</strong>
             <span>Oct 11-14, 2026</span>
           </div>
         </div>
       </div>
 
+      <!-- Program Committee -->
+      <div class="info-card" style="text-align: center; background: #f9f9f9;">
+        <h3>Program Committee</h3>
+        <p>We are looking for volunteers and accepting nominations (self-nominations welcome!).</p>
+        <a class="btn btn-raid" href="#" style="margin-top: 10px;">Volunteer / Nominate</a>
+      </div>
+      
       <!-- Topics Section -->
       <div class="info-card">
-        <h3>Topics of Interest</h3>
+        <h2>Topics of Interest</h2>
         <p>RAID solicits submissions on all aspects of computer security, including but not limited to:</p>
         <div class="row" style="margin-top: 20px;">
           <div class="col-md-6">
@@ -114,25 +122,28 @@
             </ul>
           </div>
         </div>
-        <p style="margin-top: 20px;"><em>Papers will be judged on novelty, significance, correctness, and clarity. We expect all papers to provide enough detail to enable the reproducibility of their experimental results.</em></p>
+        <p style="margin-top: 20px;"><em>Papers will be judged on novelty, significance, correctness, and clarity. We expect all papers to provide enough detail to enable the reproducibility of their experimental results. We encourage authors to make both the tools and data publicly available.</em></p>
+        <p>More information is available at <a href="https://raid2025.github.io/" target="_blank">https://raid2025.github.io/</a>.</p>
       </div>
 
       <!-- Submission Guidelines Section -->
       <div class="info-card">
-        <h3>Submission Guidelines</h3>
+        <h2>Submission Guidelines</h2>
+        <p>We are looking for volunteers, and we are accepting nominations (self-nominations are welcome as well). If interested, please fill this form: <a href="#"> TBD Link</a>.</p>
         <div class="row">
           <div class="col-md-6">
             <h4><strong>Format Requirements</strong></h4>
             <ul class="key-points">
+              <li>Submissions must be a PDF file</li>
               <li>IEEE 8.5″ × 11″ two-column format</li>
               <li>10pt fonts, IEEE Conference template</li>
               <li>Maximum 12 pages (excluding references)</li>
-              <li>Appendices and supplementary material allowed</li>
             </ul>
             <p style="margin-top: 15px;">
               <a class="btn btn-raid-outline" href="https://template-selector.ieee.org/" target="_blank">Get IEEE Template</a>
-              <a class="btn btn-raid-outline" href="#" style="margin-left: 10px;">Submit Paper</a>
+              <a class="btn btn-raid-outline" href="#" style="margin-left: 10px;">Submit Paper (TBD Link)</a>
             </p>
+            <p><strong>Note:</strong> Reviewers are not required to read the appendices or any supplementary material. Authors should not change the font or the margins of the IEEE format. Submissions not following the required format may be rejected without review.</p>
           </div>
           <div class="col-md-6">
             <h4><strong>Review Process</strong></h4>
@@ -141,24 +152,45 @@
               <li>At least three reviewers per paper</li>
               <li>Papers must be properly anonymized</li>
               <li>No major/minor revision rounds</li>
+              <li>Must be original work, not duplicate submissions</li>
+              <li>Authors may give talks, post preprints, or disclose vulnerabilities during review.</li>
             </ul>
-            <p style="margin-top: 15px;"><em>Authors can give talks, post preprints, or disclose vulnerabilities during the review process. Contact the PC chairs if you have questions.</em></p>
+            <p style="margin-top: 15px;">
+              <a class="toggle-link" href="#reviewDetails" data-toggle="collapse" aria-expanded="false">
+                <span class="toggle-icon">▶</span>See More Details
+              </a>
+            </p>
+            <div id="reviewDetails" class="collapse" style="margin-top: 15px;">
+              <p><strong>Anonymization:</strong> Papers must be properly anonymized—author names/affiliations must not appear, refer to your own prior work in third person, avoid titles matching public technical reports, and anonymize bibliographies appropriately. Papers not properly anonymized may be rejected without review.</p>
+              <p><strong>Originality:</strong> Submissions must not substantially duplicate published work or be submitted in parallel to other venues with proceedings. Simultaneous submission, previously published work, and plagiarism constitute dishonesty.</p>
+              <!-- <p><em>Authors may give talks, post preprints, or disclose vulnerabilities during review. Questions? Contact PC chairs at <a href="#">TBD</a>.</em></p> -->
+            </div>
           </div>
         </div>
       </div>
-
+      
       <!-- Ethics & Publication Section -->
       <div class="row">
         <div class="col-md-6">
           <div class="info-card">
             <h3>Ethical Considerations</h3>
-            <p>Submissions involving human subjects, personal data, or vulnerabilities should:</p>
+            <p>Submissions involving human subjects, human-derived data (even anonymized), or that may put humans at risk should:</p>
             <ul class="key-points">
-              <li>Disclose IRB approval or waiver</li>
-              <li>Describe ethical safeguards taken</li>
-              <li>Detail vulnerability disclosure plans</li>
-              <li>Handle PII and sensitive data responsibly</li>
+              <li>Disclose IRB approval or waiver from institutional ethics boards</li>
+              <li>Discuss ethical treatment of participants and affected parties</li>
+              <li>Detail vulnerability disclosure plans (e.g., vendor notification)</li>
+              <li>Explain handling procedures for PII and sensitive data</li>
             </ul>
+            <p style="margin-top: 12px;">
+              <a class="toggle-link" href="#ethicsDetails" data-toggle="collapse" aria-expanded="false">
+                <span class="toggle-icon">▶</span>See More Details
+              </a>
+            </p>
+            <div id="ethicsDetails" class="collapse" style="margin-top: 12px;">
+              <p>If your submission deals with vulnerabilities (e.g., software vulnerabilities or hardware design weaknesses), you must discuss in detail the steps already taken or planned to address them, such as coordinated disclosure to vendors.</p>
+              <p>The same applies for submissions dealing with personally identifiable information (PII) or other sensitive data—explain your data handling and protection procedures.</p>
+              <p><strong>Note:</strong> Papers raising significant ethical or legal concerns may be rejected based on these concerns alone.</p>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
@@ -168,21 +200,24 @@
             <ul class="key-points">
               <li>Published by <a href="https://www.computer.org/conferences/cps" target="_blank">IEEE CPS</a></li>
               <li>Submitted to IEEE Xplore Digital Library</li>
-              <li>Presented at RAID 2026</li>
-              <li>Subject to full author registration</li>
+              <li>Presented at RAID 2026 by at least one author</li>
+              <li>Subject to full author registration requirement</li>
             </ul>
-            <p style="margin-top: 15px;"><small>Authors must adhere to <a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE Code of Ethics</a> and <a href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/" target="_blank">IEEE Submission Policies</a>.</small></p>
+            <p style="margin-top: 12px;">
+              <a class="toggle-link" href="#publicationDetails" data-toggle="collapse" aria-expanded="false">
+                <span class="toggle-icon">▶</span>See More Details
+              </a>
+            </p>
+            <div id="publicationDetails" class="collapse" style="margin-top: 12px;">
+              <p><strong>Registration Policy:</strong> Each accepted paper requires at least one full author registration. For papers sharing authors, a separate author registration is required for each paper.</p>
+              <p><strong>No-Show Policy:</strong> Papers not presented at the conference will be reported to the publisher and removed from the proceedings.</p>
+              <p><strong>Ethics:</strong> Authors must adhere to <a href="https://www.ieee.org/about/corporate/governance/p7-8.html" target="_blank">IEEE Code of Ethics</a> and <a href="https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/" target="_blank">IEEE Submission Policies</a>.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Program Committee -->
-      <div class="info-card" style="text-align: center; background: #f9f9f9;">
-        <h3>Program Committee</h3>
-        <p>We are looking for volunteers and accepting nominations (self-nominations welcome!).</p>
-        <a class="btn btn-raid" href="#" style="margin-top: 10px;">Volunteer / Nominate</a>
-      </div>
-
+      <p><em>Questions? Contact PC chairs at <a href="#">TBD</a>.</em></p>
     </div>
     <br/>
   </div>
