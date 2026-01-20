@@ -67,8 +67,23 @@
  
 </div>
 
+<!-- Search Box -->
+<div class="search-container" style="max-width: 800px; margin: 0 auto 30px auto; padding: 0 15px;">
+  <div class="input-group">
+    <input type="text" id="paperSearch" class="form-control" placeholder="Search papers by title or author..." 
+           style="font-size: 16px; padding: 12px;">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" onclick="clearSearch()" 
+              style="padding: 12px 20px; font-size: 16px;">
+        <span class="glyphicon glyphicon-remove"></span> Clear
+      </button>
+    </span>
+  </div>
+  <div id="searchStats" style="margin-top: 10px; font-size: 14px; color: #666; text-align: center;"></div>
+</div>
+
 <div class="responsive" style="font-size:17px; text-align:left;">
-  <!--
+<!--  
   <p><b> A Comprehensive Quantification of Inconsistencies in Memory Dumps <a href="#" style="display:none" data-pid="10">[PDF]</a></b></br>
   Andrea Oliveri, EURECOM; Davide Balzarotti, EURECOM; 
   </p>
@@ -333,6 +348,59 @@
       if (!allowedPages.includes(currentPage) && currentPage !== "") {
           window.location.href = "https://raid2026.sptagelab.org/index.html";
       }
+
+  // Search functionality for accepted papers
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('paperSearch');
+    const papersContainer = document.querySelector('.responsive');
+    const searchStats = document.getElementById('searchStats');
+    
+    if (searchInput && papersContainer) {
+      searchInput.addEventListener('input', function() {
+        performSearch();
+      });
+    }
+  });
+
+  function performSearch() {
+    const searchInput = document.getElementById('paperSearch');
+    const papersContainer = document.querySelector('.responsive');
+    const searchStats = document.getElementById('searchStats');
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    const papers = papersContainer.getElementsByTagName('p');
+    let visibleCount = 0;
+    let totalCount = papers.length;
+    
+    if (searchTerm === '') {
+      // Show all papers
+      for (let i = 0; i < papers.length; i++) {
+        papers[i].style.display = '';
+      }
+      searchStats.textContent = '';
+    } else {
+      // Filter papers
+      for (let i = 0; i < papers.length; i++) {
+        const paperText = papers[i].textContent.toLowerCase();
+        if (paperText.includes(searchTerm)) {
+          papers[i].style.display = '';
+          visibleCount++;
+        } else {
+          papers[i].style.display = 'none';
+        }
+      }
+      
+      // Update search statistics
+      searchStats.textContent = `找到 ${visibleCount} 篇論文（共 ${totalCount} 篇）`;
+    }
+  }
+
+  function clearSearch() {
+    const searchInput = document.getElementById('paperSearch');
+    const searchStats = document.getElementById('searchStats');
+    searchInput.value = '';
+    performSearch();
+  }
   </script>
  
 

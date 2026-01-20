@@ -7,8 +7,8 @@ Official Website for The 28th International Symposium on Research in Attacks, In
 - 新增see more按鈕
 - 修改footer格式，新增organizers資訊，聯絡資訊
 - 新增Visit Lancaster頁面
+- 新增Accepted Papers 搜尋欄位
 
 
 ### 代修改
-- Call for Posters內容整理
-- Registration內容整理
+
