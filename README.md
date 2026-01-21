@@ -1,2 +1,80 @@
-# raid2025.github.io
-Official Website for The 28th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2025)
+# RAID 2026 Official Website
+
+Official Website for The 29th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2026)
+
+## Directory Structure
+
+- **css/** (Website stylesheets)
+  
+  - style.css (Main theme CSS file - contains global styles and component styles)
+
+- **js/** (JavaScript files for website functionality)
+  
+  - navigation.js (Handles navigation bar, UK time clock, scroll-to-top, and sticky navigation)
+  
+  - data-loader.js (Loads and renders accepted papers from CSV, includes search functionality)
+
+- **data/** (Data files for dynamic content)
+  
+  - test_accepted_papers.csv (Test data for development accepted papers page)
+
+- **images/** (Website images and graphics)
+  
+  - Lancaster_ThingsToDo*.jpg (Images for "Things to Do" section in visit_lancaster.html)
+  
+  - Other conference-related images
+
+- ***_html*.html** (HTML page files)
+
+## Updating Content
+
+### Adding/Updating Accepted Papers
+
+1. Edit `data/test_accepted_papers.csv` with the following format:
+   ```csv
+   id,title,authors
+   P001,Paper Title,Author1; Author2; Author3
+   P002,Another Paper,Author4; Author5
+   ```
+
+2. Multiple authors should be separated by semicolons (`;`)
+
+3. If title or authors contain commas, wrap them in quotes: `"Title, with comma","Author, Name"`
+
+4. The browser will automatically load new data the next day (or force refresh with Cmd+Shift+R)
+
+### Adding New Pages
+
+1. Copy an existing HTML file as template
+
+2. Update navigation bar
+
+3. Update footer
+
+4. Check new html have scripts:
+   ```html
+   <script src="js/navigation.js"></script>
+   ```
+
+5. Update all other HTML files' navigation bars to include the new page link
+
+## JavaScript Architecture
+
+### navigation.js
+- UK time clock display
+- Sticky navigation on scroll
+- Scroll-to-top button
+- One `DOMContentLoaded` listener for all pages
+
+### data-loader.js
+- CSV parsing and data loading
+- Accepted papers rendering
+- Search functionality
+- Error handling
+- Separate `DOMContentLoaded` listener for accepted papers page only
+
+## To-Do List
+### Get program PDFs
+- **downloads/** (Downloadable PDF files)
+
+  - program_day*.pdf (Conference program PDFs for each day)
