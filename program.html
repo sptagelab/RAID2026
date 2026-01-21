@@ -14,152 +14,89 @@
   <link rel="stylesheet" href="resources/style.css"/>
 </head>
 
-<header class="text-center">
-  <div><br></div>
-  <nav id="navbar">
-    <img src="images/logo.webp" alt="Logo image" width="120" height="52">
-  </nav>
-  <div><br></div>
-  </header>
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
 
   <div>
+  <div class="container-fluid">
+    <div class="hero text-center">
+      <a href="index.html"><img src="images/logo.webp" alt="RAID logo" class="hero-logo"></a>
+      <span class="pill">Oct 11–14, 2026 · Lancaster, UK</span>
+      <p class="hero-subtitle">The 29th International Symposium on Research in Attacks, Intrusions and Defenses.</p>
 
-  <nav class="navbar navbar-default navbar-absolute-top ">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav  mr-auto" style="float: none;display: inline-block;">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="call.html">Call for Papers</a></li>
-          <li><a href="call_poster.html">Call for Posters</a></li>
-          <li><a href="committees.html">Committees</a></li>
-          <li><a class="nav-item nav-link active" href="program.html">Program</a></li>
-          <li><a href="registration.html">Registration</a></li> 
-          <li><a href="accepted.html">Accepted Papers</a></li>
-          <li><a href="awards.html">Awards</a></li>
-          <li><a href="venue.html">Venue & Travel</a></li>
-          <li><a href="contact.html"> Contact</a></li>
-          <li><a href="https://securecomm.eai-conferences.org/2026/explore-lancaster/">Visit Lancaster</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="text-center">
-    <div id="carouselContainer" style="display: flex; justify-content: center;">
-      <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="images/index_slider1.webp"  alt="Image 1">
+      <div class="text-center">
+        <div id="carouselContainer" style="display: flex; justify-content: center;">
+          <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/index_slider1.webp" alt="Image 1">
+              </div>
+              <div class="item">
+                <img src="images/index_slider2.webp" alt="Image 2">
+              </div>
+              <div class="item">
+                <img src="images/index_slider3.webp" alt="Image 3">
+              </div>
+            </div>
           </div>
-      
-          <div class="item">
-            <img src="images/index_slider2.webp"  alt="Image 2" >
-          </div>
-      
-          <div class="item">
-            <img src="images/index_slider3.webp"  alt="Image 3">
-          </div>
-      
         </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
+        <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
+        <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
+        <a class="btn btn-raid" href="program.html">Program</a>
+        <a class="btn btn-raid-outline" href="accepted.html">Accepted Papers</a>
+        <a class="btn btn-raid-outline" href="awards.html">Awards</a>
+        <a class="btn btn-raid-outline" href="registration.html">Register</a>
+        <a class="btn btn-raid-outline" href="committees.html">Committees</a>
+        <a class="btn btn-raid-outline" href="contact.html">Contact</a>
+        <a class="btn btn-raid-outline" href="visit_lancaster.html">Visit Lancaster</a>
       </div>
     </div>
   </div>
 
 
 <!-- Container (About Section) -->
-<div id="program"  class="container-fluid">
+<div id="program"  class="container-body">
   <div class="text-center">
  <h2>Full Program (TBD)</h2>
   <hr />
 </div>
 
-
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 footer-section">
+          <h4>RAID 2026</h4>
+          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
+          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h4>Organized By</h4>
+          <p>Lancaster University</p>
+          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
+          <p>Email: <a href="mailto:TBD">TBD</a></p>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="call.html">Call for Papers</a></li>
+            <li><a href="committees.html">Committees</a></li>
+            <li><a href="venue.html">Venue & Travel</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RAID. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

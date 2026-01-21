@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 新增搜尋欄位 -->
 
 <head>
   <!-- Theme Made By www.w3schools.com -->
@@ -15,79 +16,74 @@
   <link rel="stylesheet" href="resources/style.css"/>
 </head>
 
-<header class=" text-center">
-  <div><br></div>
-  <nav id="navbar">
-    <img src="images/logo.webp" alt="Logo image" width="120" height="52">
-  </nav>
-  <div><br></div>
-</header>
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></button>
 
   <div>
-    <nav class="navbar navbar-default navbar-absolute-top ">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="container-fluid">
+      <div class="hero text-center">
+        <a href="index.html"><img src="images/logo.webp" alt="RAID logo" class="hero-logo"></a>
+        <span class="pill">Oct 11–14, 2026 · Lancaster, UK</span>
+        <p class="hero-subtitle">The 29th International Symposium on Research in Attacks, Intrusions and Defenses.</p>
 
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav  mr-auto" style="float: none;display: inline-block;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="call.html">Call for Papers</a></li>
-            <li><a href="call_poster.html">Call for Posters</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="program.html">Program</a></li>
-            <li><a href="registration.html">Registration</a></li> 
-            <li><a class="nav-item nav-link active" href="accepted.html">Accepted Papers</a></li>
-            <li><a href="awards.html">Awards</a></li>
-            <li><a href="venue.html">Venue & Travel</a></li>
-            <li><a href="contact.html"> Contact</a></li>
-            <li><a href="https://securecomm.eai-conferences.org/2026/explore-lancaster/">Visit Lancaster</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="text-center">
-      <div id="carouselContainer" style="display: flex; justify-content: center;">
-        <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-        
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="images/index_slider1.webp"  alt="Image 1">
+        <div class="text-center">
+          <div id="carouselContainer" style="display: flex; justify-content: center;">
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/index_slider1.webp" alt="Image 1">
+                </div>
+                <div class="item">
+                  <img src="images/index_slider2.webp" alt="Image 2">
+                </div>
+                <div class="item">
+                  <img src="images/index_slider3.webp" alt="Image 3">
+                </div>
+              </div>
             </div>
-        
-            <div class="item">
-              <img src="images/index_slider2.webp"  alt="Image 2" >
-            </div>
-        
-            <div class="item">
-              <img src="images/index_slider3.webp"  alt="Image 3">
-            </div>
-        
           </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
+          <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
+          <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
+          <a class="btn btn-raid-outline" href="program.html">Program</a>
+          <a class="btn btn-raid" href="accepted.html">Accepted Papers</a>
+          <a class="btn btn-raid-outline" href="awards.html">Awards</a>
+          <a class="btn btn-raid-outline" href="registration.html">Register</a>
+          <a class="btn btn-raid-outline" href="committees.html">Committees</a>
+          <a class="btn btn-raid-outline" href="contact.html">Contact</a>
+          <a class="btn btn-raid-outline" href="visit_lancaster.html">Visit Lancaster</a>
         </div>
       </div>
     </div>
 
-<div id="accepted" class="container-fluid">
+<div id="accepted" class="container-body">
   <div class="text-center">
  <h2>Accepted papers</h2>
  <hr/>
  
 </div>
 
+<!-- Search Box -->
+<div class="search-container" style="max-width: 800px; margin: 0 auto 30px auto; padding: 0 15px;">
+  <div class="input-group">
+    <input type="text" id="paperSearch" class="form-control" placeholder="Search papers by title or author..." 
+           style="font-size: 16px; padding: 12px;">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button" onclick="clearSearch()" 
+              style="padding: 12px 20px; font-size: 16px;">
+        <span class="glyphicon glyphicon-remove"></span> Clear
+      </button>
+    </span>
+  </div>
+  <div id="searchStats" style="margin-top: 10px; font-size: 14px; color: #666; text-align: center;"></div>
+</div>
+
 <div class="responsive" style="font-size:17px; text-align:left;">
-  <!--
+<!--  
   <p><b> A Comprehensive Quantification of Inconsistencies in Memory Dumps <a href="#" style="display:none" data-pid="10">[PDF]</a></b></br>
   Andrea Oliveri, EURECOM; Davide Balzarotti, EURECOM; 
   </p>
@@ -281,7 +277,37 @@
         <hr />
       </div>
 
-
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 footer-section">
+          <h4>RAID 2026</h4>
+          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
+          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h4>Organized By</h4>
+          <p>Lancaster University</p>
+          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
+          <p>Email: <a href="mailto:TBD">TBD</a></p>
+        </div>
+        <div class="col-md-4 footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="call.html">Call for Papers</a></li>
+            <li><a href="committees.html">Committees</a></li>
+            <li><a href="venue.html">Venue & Travel</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 RAID. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 
 <script>
   //Get the button
@@ -322,24 +348,63 @@
       if (!allowedPages.includes(currentPage) && currentPage !== "") {
           window.location.href = "https://raid2026.sptagelab.org/index.html";
       }
+
+  // Search functionality for accepted papers
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('paperSearch');
+    const papersContainer = document.querySelector('.responsive');
+    const searchStats = document.getElementById('searchStats');
+    
+    if (searchInput && papersContainer) {
+      searchInput.addEventListener('input', function() {
+        performSearch();
+      });
+    }
+  });
+
+  function performSearch() {
+    const searchInput = document.getElementById('paperSearch');
+    const papersContainer = document.querySelector('.responsive');
+    const searchStats = document.getElementById('searchStats');
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    const papers = papersContainer.getElementsByTagName('p');
+    let visibleCount = 0;
+    let totalCount = papers.length;
+    
+    if (searchTerm === '') {
+      // Show all papers
+      for (let i = 0; i < papers.length; i++) {
+        papers[i].style.display = '';
+      }
+      searchStats.textContent = '';
+    } else {
+      // Filter papers
+      for (let i = 0; i < papers.length; i++) {
+        const paperText = papers[i].textContent.toLowerCase();
+        if (paperText.includes(searchTerm)) {
+          papers[i].style.display = '';
+          visibleCount++;
+        } else {
+          papers[i].style.display = 'none';
+        }
+      }
+      
+      // Update search statistics
+      searchStats.textContent = `找到 ${visibleCount} 篇論文（共 ${totalCount} 篇）`;
+    }
+  }
+
+  function clearSearch() {
+    const searchInput = document.getElementById('paperSearch');
+    const searchStats = document.getElementById('searchStats');
+    searchInput.value = '';
+    performSearch();
+  }
   </script>
  
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
