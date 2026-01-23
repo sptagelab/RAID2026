@@ -1,6 +1,5 @@
 id,title,authors
 P001,title,authors1; authors2; authors3; authors4
-P002,title,authors5; authors6
-P003,title,authors7; authors8; authors9
-P004,title,authors10; authors11
-P005,title,authors12; authors13
+P002,title,authors1; authors2; authors3
+P004,title,authors1; authors2
+P005,title,authors1; authors2; authors3; authors4

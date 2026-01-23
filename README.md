@@ -21,6 +21,8 @@ Official Website for The 29th International Symposium on Research in Attacks, In
 - **images/** (Website images and graphics)
   
   - Lancaster_ThingsToDo*.jpg (Images for "Things to Do" section in visit_lancaster.html)
+
+  - logo_*.png/.webp (Logos of sponsors and partners)
   
   - Other conference-related images
 
@@ -78,3 +80,5 @@ Official Website for The 29th International Symposium on Research in Attacks, In
 - **downloads/** (Downloadable PDF files)
 
   - program_day*.pdf (Conference program PDFs for each day)
+  
+- Burger Menu for mobile navigation
