@@ -77,6 +77,35 @@ function topFunction() {
   });
 }
 
+// Mobile Menu Functions
+function toggleMobileMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.querySelector('.menu-overlay');
+  const hamburger = document.querySelector('.hamburger-menu');
+  
+  mobileMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  hamburger.classList.toggle('active');
+  
+  // Prevent body scroll when menu is open
+  if (mobileMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+function closeMobileMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const overlay = document.querySelector('.menu-overlay');
+  const hamburger = document.querySelector('.hamburger-menu');
+  
+  mobileMenu.classList.remove('active');
+  overlay.classList.remove('active');
+  hamburger.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
 // Initialize everything when DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
   initializeUKClock();

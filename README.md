@@ -10,9 +10,17 @@ Official Website for The 29th International Symposium on Research in Attacks, In
 
 - **js/** (JavaScript files for website functionality)
   
+  - template-loader.js (Loads header and footer templates dynamically)
+  
   - navigation.js (Handles navigation bar, UK time clock, scroll-to-top, and sticky navigation)
   
   - data-loader.js (Loads and renders accepted papers from CSV, includes search functionality)
+
+- **includes/** (Reusable HTML templates)
+  
+  - header.html (Navigation bar and mobile menu template)
+  
+  - footer.html (Footer template)
 
 - **data/** (Data files for dynamic content)
   
@@ -21,6 +29,8 @@ Official Website for The 29th International Symposium on Research in Attacks, In
 - **images/** (Website images and graphics)
   
   - Lancaster_ThingsToDo*.jpg (Images for "Things to Do" section in visit_lancaster.html)
+
+  - logo_*.png/.webp (Logos of sponsors and partners)
   
   - Other conference-related images
 
@@ -49,18 +59,27 @@ Official Website for The 29th International Symposium on Research in Attacks, In
 
 1. Copy an existing HTML file as template
 
-2. Update navigation bar
-
-3. Update footer
-
-4. Check new html have scripts:
+2. Ensure it includes the template placeholders:
    ```html
+   <div id="header-placeholder"></div>
+   <!-- Your page content -->
+   <div id="footer-placeholder"></div>
+   ```
+
+3. Include required scripts before closing `</body>` tag:
+   ```html
+   <script src="js/template-loader.js"></script>
    <script src="js/navigation.js"></script>
    ```
 
-5. Update all other HTML files' navigation bars to include the new page link
+4. To add the new page to navigation, edit only `includes/header.html`
 
 ## JavaScript Architecture
+
+### template-loader.js
+- Loads header and footer from `includes/` directory
+- Auto-highlights current page in navigation
+- Runs on all pages
 
 ### navigation.js
 - UK time clock display

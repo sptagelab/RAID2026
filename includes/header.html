@@ -1,0 +1,71 @@
+<!-- Sticky Navigation Bar with Integrated Clock -->
+<nav id="stickyNav"
+  style="position: fixed; top: -150px; left: 0; right: 0; z-index: 9999; background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 12px 20px; transition: top 0.3s ease;">
+  <div
+    style="margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">
+    <!-- Logo (clickable to home) -->
+    <a href="index.html" style="display: flex; align-items: center; text-decoration: none; margin-right: 10px;">
+      <img src="images/logo.webp" alt="RAID" style="height: 60px;">
+    </a>
+
+    <!-- Navigation Buttons -->
+    <a href="index.html" class="btn btn-sm btn-raid-outline nav-home" style="padding: 8px 14px; font-size: 16px;">Home</a>
+    <a href="call.html" class="btn btn-sm btn-raid-outline nav-call" style="padding: 8px 14px; font-size: 16px;">Call for Papers</a>
+    <a href="call_poster.html" class="btn btn-sm btn-raid-outline nav-call_poster" style="padding: 8px 14px; font-size: 16px;">Call for Posters</a>
+    <a href="venue.html" class="btn btn-sm btn-raid-outline nav-venue" style="padding: 8px 14px; font-size: 16px;">Venue & Travel</a>
+    <a href="program.html" class="btn btn-sm btn-raid-outline nav-program" style="padding: 8px 14px; font-size: 16px;">Program</a>
+    <a href="accepted.html" class="btn btn-sm btn-raid-outline nav-accepted" style="padding: 8px 14px; font-size: 16px;">Accepted Papers</a>
+    <a href="awards.html" class="btn btn-sm btn-raid-outline nav-awards" style="padding: 8px 14px; font-size: 16px;">Awards</a>
+    <a href="registration.html" class="btn btn-sm btn-raid-outline nav-registration" style="padding: 8px 14px; font-size: 16px;">Register</a>
+    <a href="committees.html" class="btn btn-sm btn-raid-outline nav-committees" style="padding: 8px 14px; font-size: 16px;">Committees</a>
+    <a href="contact.html" class="btn btn-sm btn-raid-outline nav-contact" style="padding: 8px 14px; font-size: 16px;">Contact</a>
+    <a href="visit_lancaster.html" class="btn btn-sm btn-raid-outline nav-visit_lancaster" style="padding: 8px 14px; font-size: 16px;">Visit Lancaster</a>
+
+    <!-- Clock -->
+    <div
+      style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 10px 18px; border-radius: 8px; display: flex; align-items: center; gap: 14px; margin-left: 10px;">
+      <div style="text-align: center;">
+        <div
+          style="color: rgba(255,255,255,0.9); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px;">
+          🇬🇧 Lancaster
+        </div>
+        <div id="ukClock"
+          style="color: white; font-size: 20px; font-weight: 700; font-family: 'Courier New', monospace; letter-spacing: 1px; line-height: 1;">
+          --:--:--
+        </div>
+      </div>
+      <div id="ukDate"
+        style="color: rgba(255,255,255,0.85); font-size: 13px; padding-left: 14px; border-left: 1px solid rgba(255,255,255,0.3); line-height: 1.3;">
+        Loading...
+      </div>
+    </div>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger-menu" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div class="menu-overlay" onclick="closeMobileMenu()"></div>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+  <div class="mobile-menu-links">
+    <a href="index.html" class="mobile-nav-home">Home</a>
+    <a href="call.html" class="mobile-nav-call">Call for Papers</a>
+    <a href="call_poster.html" class="mobile-nav-call_poster">Call for Posters</a>
+    <a href="venue.html" class="mobile-nav-venue">Venue & Travel</a>
+    <a href="program.html" class="mobile-nav-program">Program</a>
+    <a href="accepted.html" class="mobile-nav-accepted">Accepted Papers</a>
+    <a href="awards.html" class="mobile-nav-awards">Awards</a>
+    <a href="registration.html" class="mobile-nav-registration">Register</a>
+    <a href="committees.html" class="mobile-nav-committees">Committees</a>
+    <a href="contact.html" class="mobile-nav-contact">Contact</a>
+    <a href="visit_lancaster.html" class="mobile-nav-visit_lancaster">Visit Lancaster</a>
+  </div>
+</div>
