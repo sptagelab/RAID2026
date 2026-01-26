@@ -17,6 +17,9 @@
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
   <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></span></button>
 
+  <!-- Header Template Placeholder -->
+  <div id="header-placeholder"></div>
+
   <div>
     <div class="container-fluid">
       <div class="hero text-center">
@@ -43,6 +46,7 @@
         </div>
 
         <div class="cta-buttons">
+          <a class="btn btn-raid-outline" href="index.html">Home</a>
           <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
           <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
           <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
@@ -86,7 +90,7 @@
         <div class="row" style="margin-bottom: 30px;">
           <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="attraction-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; height: 100%;">
-              <img src="images/Obrazok1.jpg" alt="Lancaster Castle" style="width: 100%; height: 250px; object-fit: cover;">
+              <img src="images/Lancaster_ThingsToDo1.jpg" alt="Lancaster Castle" style="width: 100%; height: 250px; object-fit: cover;">
               <div style="padding: 20px;">
                 <h4 style="margin-top: 0; margin-bottom: 10px;"><a href="https://www.lancastercastle.com/" target="_blank">Lancaster Castle</a></h4>
                 <p style="margin-bottom: 0; color: #555; line-height: 1.6;">Lancaster Castle is a medieval castle and former prison in Lancaster in the English county of Lancashire.</p>
@@ -96,7 +100,7 @@
 
           <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="attraction-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; height: 100%;">
-              <img src="images/Obrazok2.jpg" alt="Williamson Park" style="width: 100%; height: 250px; object-fit: cover;">
+              <img src="images/Lancaster_ThingsToDo2.jpg" alt="Williamson Park" style="width: 100%; height: 250px; object-fit: cover;">
               <div style="padding: 20px;">
                 <h4 style="margin-top: 0; margin-bottom: 10px;"><a href="http://www.lancaster.gov.uk/williamsonpark" target="_blank">Williamson Park</a></h4>
                 <p style="margin-bottom: 0; color: #555; line-height: 1.6;">Williamson Park is one of Lancaster's most popular green spaces, known for its woodland walks, lakeside views, and the landmark Ashton Memorial overlooking the city.</p>
@@ -106,7 +110,7 @@
           
           <div class="col-md-4" style="margin-bottom: 20px;">
             <div class="attraction-card" style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; height: 100%;">
-              <img src="images/Obrazok3.jpg" alt="The Lake District" style="width: 100%; height: 250px; object-fit: cover;">
+              <img src="images/Lancaster_ThingsToDo3.jpg" alt="The Lake District" style="width: 100%; height: 250px; object-fit: cover;">
               <div style="padding: 20px;">
                 <h4 style="margin-top: 0; margin-bottom: 10px;"><a href="https://www.lakedistrict.gov.uk/" target="_blank">The Lake District</a></h4>
                 <p style="margin-bottom: 0; color: #555; line-height: 1.6;">The Lake District, a short trip from Lancaster, is a world-famous national park of mountains and lakes, ideal for hiking, boating, and scenic countryside escapes.</p>
@@ -124,61 +128,10 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 footer-section">
-          <h4>RAID 2026</h4>
-          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
-          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Organized By</h4>
-          <p>Lancaster University</p>
-          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
-          <p>Email: <a href="mailto:TBD">TBD</a></p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="call.html">Call for Papers</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="venue.html">Venue & Travel</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 RAID. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer Template Placeholder -->
+  <div id="footer-placeholder"></div>
 
-  <div id="footer" class="light"></div>
-
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-    var rootElement = document.documentElement;
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-    function scrollFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
-    }
-  </script>
+  <script src="js/template-loader.js"></script>
+  <script src="js/navigation.js"></script>
 </body>
 </html>

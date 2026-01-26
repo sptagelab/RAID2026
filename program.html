@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Theme Made By www.w3schools.com -->
   <title>RAID 2026 – The 29th International Symposium on Research in Attacks, Intrusions and Defenses</title>
@@ -11,92 +12,925 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
-  <link rel="stylesheet" href="resources/style.css"/>
+  <link rel="stylesheet" href="resources/style.css" />
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-  <button onclick="topFunction()" id="myBtn" ><span  class="glyphicon glyphicon-chevron-up" ></button>
+  <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></button>
+
+  <!-- Header Template Placeholder -->
+  <div id="header-placeholder"></div>
 
   <div>
-  <div class="container-fluid">
-    <div class="hero text-center">
-      <a href="index.html"><img src="images/logo.webp" alt="RAID logo" class="hero-logo"></a>
-      <span class="pill">Oct 11–14, 2026 · Lancaster, UK</span>
-      <p class="hero-subtitle">The 29th International Symposium on Research in Attacks, Intrusions and Defenses.</p>
+    <div class="container-fluid">
+      <div class="hero text-center">
+        <a href="index.html"><img src="images/logo.webp" alt="RAID logo" class="hero-logo"></a>
+        <span class="pill">Oct 11–14, 2026 · Lancaster, UK</span>
+        <p class="hero-subtitle">The 29th International Symposium on Research in Attacks, Intrusions and Defenses.</p>
 
-      <div class="text-center">
-        <div id="carouselContainer" style="display: flex; justify-content: center;">
-          <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/index_slider1.webp" alt="Image 1">
-              </div>
-              <div class="item">
-                <img src="images/index_slider2.webp" alt="Image 2">
-              </div>
-              <div class="item">
-                <img src="images/index_slider3.webp" alt="Image 3">
+        <div class="text-center">
+          <div id="carouselContainer" style="display: flex; justify-content: center;">
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="images/index_slider1.webp" alt="Image 1">
+                </div>
+                <div class="item">
+                  <img src="images/index_slider2.webp" alt="Image 2">
+                </div>
+                <div class="item">
+                  <img src="images/index_slider3.webp" alt="Image 3">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="cta-buttons">
-        <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
-        <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
-        <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
-        <a class="btn btn-raid" href="program.html">Program</a>
-        <a class="btn btn-raid-outline" href="accepted.html">Accepted Papers</a>
-        <a class="btn btn-raid-outline" href="awards.html">Awards</a>
-        <a class="btn btn-raid-outline" href="registration.html">Register</a>
-        <a class="btn btn-raid-outline" href="committees.html">Committees</a>
-        <a class="btn btn-raid-outline" href="contact.html">Contact</a>
-        <a class="btn btn-raid-outline" href="visit_lancaster.html">Visit Lancaster</a>
+        <div class="cta-buttons">
+          <a class="btn btn-raid-outline" href="index.html">Home</a>
+          <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
+          <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
+          <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
+          <a class="btn btn-raid" href="program.html">Program</a>
+          <a class="btn btn-raid-outline" href="accepted.html">Accepted Papers</a>
+          <a class="btn btn-raid-outline" href="awards.html">Awards</a>
+          <a class="btn btn-raid-outline" href="registration.html">Register</a>
+          <a class="btn btn-raid-outline" href="committees.html">Committees</a>
+          <a class="btn btn-raid-outline" href="contact.html">Contact</a>
+          <a class="btn btn-raid-outline" href="visit_lancaster.html">Visit Lancaster</a>
+        </div>
       </div>
     </div>
-  </div>
 
 
-<!-- Container (About Section) -->
-<div id="program"  class="container-body">
-  <div class="text-center">
- <h2>Full Program (TBD)</h2>
-  <hr />
-</div>
+    <!-- Container (Program Section) -->
+    <div id="program" class="container-body">
+      <div class="text-center">
+        <h2>Conference Program</h2>
+        <p class="section-lead">October 11-14, 2026 · Lancaster, United Kingdom</p>
+        <p> Registration 08:00 – 17:00 per day at ...</p>
+        <hr />
+      </div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
+      <!-- Tab Navigation -->
+      <ul class="nav nav-tabs" role="tablist" style="margin-bottom: 30px; border-bottom: 2px solid #ddd;">
+        <li class="active"><a data-toggle="tab" href="#day1" style="font-weight: 600;">October 11 (Sun.)</a></li>
+        <li><a data-toggle="tab" href="#day2" style="font-weight: 600;">October 12 (Mon.)</a></li>
+        <li><a data-toggle="tab" href="#day3" style="font-weight: 600;">October 13 (Tue.)</a></li>
+        <li><a data-toggle="tab" href="#day4" style="font-weight: 600;">October 14 (Wed.)</a></li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+
+        <!-- Day 1: October 11 -->
+        <div id="day1" class="tab-pane fade in active">
+          <div class="text-center" style="margin-bottom: 30px;">
+            <h3 style="margin-bottom: 15px;">October 11, 2026 (Sunday)</h3>
+            <a class="btn btn-raid-outline" href="#" target="_blank">
+              <span class="glyphicon glyphicon-download-alt"></span> Download PDF
+            </a>
+          </div>
+
+          <!-- Session 1: 09:00 - 10:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>09:00 - 10:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session1" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session1" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 2: 10:00 - 11:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>10:00 - 11:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session2" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session2" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 3: 11:00 - 12:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>11:00 - 12:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session3" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session3" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Break: 12:00 - 13:00 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>12:00 - 13:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Lunch Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 4: 13:00 - 14:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>13:00 - 14:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session4" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session4" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 5: 14:00 - 15:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>14:00 - 15:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session5" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session5" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coffee Break: 15:00 - 15:30 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:00 - 15:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Coffee Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 6: 15:30 - 16:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:30 - 16:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session6" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session6" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 7: 16:30 - 17:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>16:30 - 17:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day1-session7" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day1-session7" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2: October 12 -->
+        <div id="day2" class="tab-pane fade">
+          <div class="text-center" style="margin-bottom: 30px;">
+            <h3 style="margin-bottom: 15px;">October 12, 2026 (Monday)</h3>
+            <a class="btn btn-raid-outline" href="#" target="_blank">
+              <span class="glyphicon glyphicon-download-alt"></span> Download PDF
+            </a>
+          </div>
+
+          <!-- Session 1: 09:00 - 10:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>09:00 - 10:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session1" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session1" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 2: 10:00 - 11:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>10:00 - 11:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session2" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session2" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 3: 11:00 - 12:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>11:00 - 12:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session3" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session3" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Break: 12:00 - 13:00 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>12:00 - 13:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Lunch Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 4: 13:00 - 14:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>13:00 - 14:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session4" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session4" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 5: 14:00 - 15:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>14:00 - 15:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session5" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session5" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coffee Break: 15:00 - 15:30 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:00 - 15:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Coffee Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 6: 15:30 - 16:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:30 - 16:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session6" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session6" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 7: 16:30 - 17:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>16:30 - 17:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day2-session7" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day2-session7" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3: October 13 -->
+        <div id="day3" class="tab-pane fade">
+          <div class="text-center" style="margin-bottom: 30px;">
+            <h3 style="margin-bottom: 15px;">October 13, 2026 (Tuesday)</h3>
+            <a class="btn btn-raid-outline" href="#" target="_blank">
+              <span class="glyphicon glyphicon-download-alt"></span> Download PDF
+            </a>
+          </div>
+
+          <!-- Session 1: 09:00 - 10:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>09:00 - 10:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session1" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session1" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 2: 10:00 - 11:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>10:00 - 11:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session2" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session2" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 3: 11:00 - 12:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>11:00 - 12:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session3" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session3" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Break: 12:00 - 13:00 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>12:00 - 13:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Lunch Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 4: 13:00 - 14:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>13:00 - 14:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session4" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session4" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 5: 14:00 - 15:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>14:00 - 15:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session5" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session5" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coffee Break: 15:00 - 15:30 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:00 - 15:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Coffee Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 6: 15:30 - 16:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:30 - 16:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session6" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session6" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 7: 16:30 - 17:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>16:30 - 17:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day3-session7" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day3-session7" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 4: October 14 -->
+        <div id="day4" class="tab-pane fade">
+          <div class="text-center" style="margin-bottom: 30px;">
+            <h3 style="margin-bottom: 15px;">October 14, 2026 (Wednesday)</h3>
+            <a class="btn btn-raid-outline" href="#" target="_blank">
+              <span class="glyphicon glyphicon-download-alt"></span> Download PDF
+            </a>
+          </div>
+
+          <!-- Session 1: 09:00 - 10:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>09:00 - 10:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session1" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session1" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 2: 10:00 - 11:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>10:00 - 11:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session2" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session2" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 3: 11:00 - 12:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>11:00 - 12:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session3" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session3" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lunch Break: 12:00 - 13:00 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>12:00 - 13:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Lunch Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 4: 13:00 - 14:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>13:00 - 14:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session4" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session4" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 5: 14:00 - 15:00 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>14:00 - 15:00</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session5" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session5" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coffee Break: 15:00 - 15:30 -->
+          <div class="info-card" style="background: #f9f9f9;">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:00 - 15:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Coffee Break</strong></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Session 6: 15:30 - 16:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>15:30 - 16:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Session Title: TBD</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Chair:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session6" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session6" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                  <p><strong>About Speaker:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Closing Session: 16:30 - 17:30 -->
+          <div class="info-card">
+            <div class="row">
+              <div class="col-md-3">
+                <h4 style="margin-top: 0;"><strong>16:30 - 17:30</strong></h4>
+              </div>
+              <div class="col-md-9">
+                <h4 style="margin-top: 0;"><strong>Closing Ceremony</strong></h4>
+                <p><strong>At:</strong> TBD</p>
+                <p><strong>Note:</strong> TBD</p>
+                <p style="margin-top: 12px;">
+                  <a class="toggle-link" href="#day4-session7" data-toggle="collapse" aria-expanded="false">
+                    <span class="toggle-icon">▶</span>More Details
+                  </a>
+                </p>
+                <div id="day4-session7" class="collapse"
+                  style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #eee;">
+                  <p><strong>Description:</strong> TBD</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 footer-section">
-          <h4>RAID 2026</h4>
-          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
-          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Organized By</h4>
-          <p>Lancaster University</p>
-          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
-          <p>Email: <a href="mailto:TBD">TBD</a></p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="call.html">Call for Papers</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="venue.html">Venue & Travel</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 RAID. All rights reserved.</p>
-      </div>
+      <hr />
     </div>
-  </footer>
+
+    <!-- Footer Template Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- External JavaScript files -->
+    <script src="js/template-loader.js"></script>
+    <script src="js/navigation.js"></script>
 
 </body>
-</html>
 
+</html>

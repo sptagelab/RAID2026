@@ -12,12 +12,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
-  <link rel="stylesheet" href="resources/style.css"/>
+  <link rel="stylesheet" href="resources/style.css" />
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></button>
+
+  <!-- Header Template Placeholder -->
+  <div id="header-placeholder"></div>
 
   <div>
     <div class="container-fluid">
@@ -45,6 +48,7 @@
         </div>
 
         <div class="cta-buttons">
+          <a class="btn btn-raid-outline" href="index.html">Home</a>
           <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
           <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
           <a class="btn btn-raid" href="venue.html">Venue & Travel</a>
@@ -67,7 +71,7 @@
 
         </div>
 
-    <div id="aa"></div>
+        <div id="aa"></div>
         <div class="text-center">
           <h3>Conference Venue</h3>
         </div>
@@ -76,178 +80,204 @@
         <div align="justify" class="responsive">
           <p> The 29th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2026) will be held in Lancaster UK.
           </p>
-	<div class="map-responsive">
-      <div>
-  </thead>
-  <!-- <tbody>
-    <tr style="background-color: #ffffff; vertical-align: top;">
-      <td style="padding: 12px;"><b>🚆 Public Transport:<br>Train + Bus + Light Rail</b></td>
-      <td style="padding: 12px;">
-        1. Walk to Domestic Airport Station<br>
-        2. Take <a href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/airport-line" target="_blank" style="color: #007BFF;">Airport Line</a> to Eagle Junction<br>
-        3. Transfer to <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/r583" target="_blank" style="color: #007BFF;">Bus R583</a> and ride to Banoon<br>
-        4. Transfer to <a href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/gold-coast-line" target="_blank" style="color: #007BFF;">Gold Coast Line</a><br>
-        5. Ride to Helensvale<br>
-        6. Take <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a> to <b>Cavill Avenue</b><br>
-        7. Walk to hotel (~3 min, 220m)<br><br>
-        ⏱️ Duration: ~3 hrs  💰 Cost: AUD 20<br>
-        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJb5rRQ__hk2sREHAg11ujAg8&start=Brisbane+Airport+%28BNE%29%3B+Airport+Drive%2C+Brisbane+Airport+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
-      </td>
-      <td style="padding: 12px;">
-        1. Walk outside the terminal<br>
-        2. Board <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/777" target="_blank" style="color: #007BFF;">Bus 777</a> to Broadbeach South<br>
-        3. Transfer to the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a><br>
-        4. Ride G:link for 5 stops<br>
-        5. Disembark at <b>Cavill Avenue</b><br>
-        6. Walk to hotel (~3 min, 220m)<br><br><br>
-        ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 0.5<br>
-        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJaaHMXOcBkWsRcHAg11ujAg8&start=Gold+Coast+Airport+%28OOL%29%3B+Eastern+Avenue%2C+Bilinga+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
-      </td>
-    </tr>
-    <tr style="background-color: #f5f9fc; vertical-align: top;">
-      <td style="padding: 12px;"><b>🚗 Uber / Rideshare</b></td>
-      <td style="padding: 12px;">
-        1. Request an Uber or taxi from the rideshare area<br>
-        2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
-        ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 160–220<br>
-        📍<a href="https://www.google.com/maps/dir/Brisbane+Airport+(BNE),+Airport+Drive,+Brisbane+Airport+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-27.6979237,152.889708,10z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b93e1ff43d19a6f:0xf02a35bd7207010!2m2!1d153.1236707!2d-27.3946264!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
-      </td>
-      <td style="padding: 12px;">
-        1. Request an Uber or taxi from the rideshare area<br>
-        2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
-        ⏱️ Duration: ~50 min  💰 Cost: AUD 50–90<br>
-        📍<a href="https://www.google.com/maps/dir/Gold+Coast+Airport+(OOL),+Eastern+Avenue,+Bilinga+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-28.090738,153.3556261,12z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b9101e75ccca169:0xf02a35bd7207070!2m2!1d153.5068408!2d-28.1631687!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+          <div class="map-responsive">
+            <div>
+              <tbody>
+                <tr style="background-color: #ffffff; vertical-align: top;">
+                  <td style="padding: 12px;"><b>🚆 Public Transport:<br>Train + Bus + Light Rail</b></td>
+                  <td style="padding: 12px;">
+                    1. Walk to Domestic Airport Station<br>
+                    2. Take <a href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/airport-line"
+                      target="_blank" style="color: #007BFF;">Airport Line</a> to Eagle Junction<br>
+                    3. Transfer to <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/r583"
+                      target="_blank" style="color: #007BFF;">Bus R583</a> and ride to Banoon<br>
+                    4. Transfer to <a
+                      href="https://jp.translink.com.au/plan-your-journey/timetables/train/t/gold-coast-line"
+                      target="_blank" style="color: #007BFF;">Gold Coast Line</a><br>
+                    5. Ride to Helensvale<br>
+                    6. Take <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank"
+                      style="color: #007BFF;">G:link Light Rail</a> to <b>Cavill Avenue</b><br>
+                    7. Walk to hotel (~3 min, 220m)<br><br>
+                    ⏱️ Duration: ~3 hrs  💰 Cost: AUD 20<br>
+                    📍<a
+                      href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJb5rRQ__hk2sREHAg11ujAg8&start=Brisbane+Airport+%28BNE%29%3B+Airport+Drive%2C+Brisbane+Airport+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram"
+                      target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+                  </td>
+                  <td style="padding: 12px;">
+                    1. Walk outside the terminal<br>
+                    2. Board <a href="https://jp.translink.com.au/plan-your-journey/timetables/bus/t/777"
+                      target="_blank" style="color: #007BFF;">Bus 777</a> to Broadbeach South<br>
+                    3. Transfer to the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank"
+                      style="color: #007BFF;">G:link Light Rail</a><br>
+                    4. Ride G:link for 5 stops<br>
+                    5. Disembark at <b>Cavill Avenue</b><br>
+                    6. Walk to hotel (~3 min, 220m)<br><br><br>
+                    ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 0.5<br>
+                    📍<a
+                      href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=12%3A00pm&startLocationId=PL%3AChIJaaHMXOcBkWsRcHAg11ujAg8&start=Gold+Coast+Airport+%28OOL%29%3B+Eastern+Avenue%2C+Bilinga+QLD&endLocationId=ST%3Aplace_cavsta&end=Cavill+Avenue+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram"
+                      target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+                  </td>
+                </tr>
+                <tr style="background-color: #f5f9fc; vertical-align: top;">
+                  <td style="padding: 12px;"><b>🚗 Uber / Rideshare</b></td>
+                  <td style="padding: 12px;">
+                    1. Request an Uber or taxi from the rideshare area<br>
+                    2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
+                    ⏱️ Duration: ~1.5 hrs  💰 Cost: AUD 160–220<br>
+                    📍<a
+                      href="https://www.google.com/maps/dir/Brisbane+Airport+(BNE),+Airport+Drive,+Brisbane+Airport+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-27.6979237,152.889708,10z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b93e1ff43d19a6f:0xf02a35bd7207010!2m2!1d153.1236707!2d-27.3946264!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank" style="color: #007BFF;">View Google Map Route</a>
+                  </td>
+                  <td style="padding: 12px;">
+                    1. Request an Uber or taxi from the rideshare area<br>
+                    2. Ride to Hilton Surfers Paradise Hotel & Residences<br><br>
+                    ⏱️ Duration: ~50 min  💰 Cost: AUD 50–90<br>
+                    📍<a
+                      href="https://www.google.com/maps/dir/Gold+Coast+Airport+(OOL),+Eastern+Avenue,+Bilinga+QLD/Hilton+Surfers+Paradise+Hotel+%26+Residences,+Orchid+Avenue,+Surfers+Paradise+QLD/@-28.090738,153.3556261,12z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b9101e75ccca169:0xf02a35bd7207070!2m2!1d153.5068408!2d-28.1631687!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!3e0?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank" style="color: #007BFF;">View Google Map Route</a>
+                  </td>
+                </tr>
+              </tbody>
+              </table>
 
-<br>
-<h3 id="skypoint"><b>How to reach Sky Point from Hilton Surfers Paradise (The Conference Venue)</b></h3>
-<table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-size: 15px;">
-  <thead>
-    <tr style="background-color: #003366; color: white;">
-      <th style="padding: 12px; text-align: left;">🚍 Option</th>
-      <th style="padding: 12px; text-align: left;">📋 Details</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color: #ffffff; vertical-align: top;">
-      <td style="padding: 12px;"><b>🚶‍♀️ Walk</b></td>
-      <td style="padding: 12px;">
-        1. Exit Hilton Surfers Paradise onto Orchid Avenue.<br>
-        2. Head south on Orchid Avenue towards Cavill Ave.<br>
-        3. Turn right towards Surfers Paradise Blvd and continue straight for about 100 meters.<br>
-        4. You’ll arrive at <a href="https://www.skypoint.com.au/" target="_blank" style="color: #007BFF;">Sky Point</a>.<br><br>
-        ⏱️ Duration: ~10 minutes<br>
-		📍<a href="https://www.google.com/maps/dir/Hilton+Surfers+Paradise+Hotel+%26+Residences,+6+Orchid+Ave,+Surfers+Paradise+QLD+4217/Sky+Point,+Surfers+Paradise+QLD/@-28.0040391,153.4274433,17z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!1m5!1m1!1s0x6b91050073d29537:0x3ca79c5ea7842809!2m2!1d153.4301393!2d-28.0067683!3e2?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: #007BFF;">View Google Map Route</a>
-      </td>
-    </tr>
-    <tr style="background-color: #f5f9fc; vertical-align: top;">
-      <td style="padding: 12px;"><b>🚆 Public Transport:<br>Light Rail</b></td>
-      <td style="padding: 12px;">
-        1. Walk to Cavill Avenue Station (approx. 3 min).<br>
-        2. Take the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank" style="color: #007BFF;">G:link Light Rail</a> toward Broadbeach South.<br>
-        3. Travel 1 stop to <b>Surfers Paradise Station</b>.<br>
-        4. Walk to SkyPoint (located at Q1 Building, next to the station).<br><br>
-        ⏱️ Duration: ~6 minutes  💰 Cost: AUD 0.5<br>
-        📍<a href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=5%3A05pm&startLocationId=ST%3Aplace_cavsta&start=Cavill+Avenue+station&endLocationId=ST%3Aplace_surstn&end=Surfers+Paradise+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram" target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br>
-			
-<h3 id="seaworldconfcenter"><b>How to reach Sea World Resort Conference Centre</b></h3>
-<img  src="images/seaworld.png" alt="Sea World Theme Park & Dinner Venue" style="width: 100%;">
--->
+              <br>
+              <h3 id="skypoint"><b>How to reach Sky Point from Hilton Surfers Paradise (The Conference Venue)</b></h3>
+              <table
+                style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif; box-shadow: 0 2px 6px rgba(0,0,0,0.1); font-size: 15px;">
+                <thead>
+                  <tr style="background-color: #003366; color: white;">
+                    <th style="padding: 12px; text-align: left;">🚍 Option</th>
+                    <th style="padding: 12px; text-align: left;">📋 Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="background-color: #ffffff; vertical-align: top;">
+                    <td style="padding: 12px;"><b>🚶‍♀️ Walk</b></td>
+                    <td style="padding: 12px;">
+                      1. Exit Hilton Surfers Paradise onto Orchid Avenue.<br>
+                      2. Head south on Orchid Avenue towards Cavill Ave.<br>
+                      3. Turn right towards Surfers Paradise Blvd and continue straight for about 100 meters.<br>
+                      4. You’ll arrive at <a href="https://www.skypoint.com.au/" target="_blank"
+                        style="color: #007BFF;">Sky Point</a>.<br><br>
+                      ⏱️ Duration: ~10 minutes<br>
+                      📍<a
+                        href="https://www.google.com/maps/dir/Hilton+Surfers+Paradise+Hotel+%26+Residences,+6+Orchid+Ave,+Surfers+Paradise+QLD+4217/Sky+Point,+Surfers+Paradise+QLD/@-28.0040391,153.4274433,17z/am=t/data=!4m14!4m13!1m5!1m1!1s0x6b910572f056cda7:0xf6b3a89c3e4e7e4f!2m2!1d153.4294549!2d-28.0010412!1m5!1m1!1s0x6b91050073d29537:0x3ca79c5ea7842809!2m2!1d153.4301393!2d-28.0067683!3e2?entry=ttu&g_ep=EgoyMDI1MTAwNy4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" style="color: #007BFF;">View Google Map Route</a>
+                    </td>
+                  </tr>
+                  <tr style="background-color: #f5f9fc; vertical-align: top;">
+                    <td style="padding: 12px;"><b>🚆 Public Transport:<br>Light Rail</b></td>
+                    <td style="padding: 12px;">
+                      1. Walk to Cavill Avenue Station (approx. 3 min).<br>
+                      2. Take the <a href="https://www.transit.land/routes/r-r7j0f-gcr1" target="_blank"
+                        style="color: #007BFF;">G:link Light Rail</a> toward Broadbeach South.<br>
+                      3. Travel 1 stop to <b>Surfers Paradise Station</b>.<br>
+                      4. Walk to SkyPoint (located at Q1 Building, next to the station).<br><br>
+                      ⏱️ Duration: ~6 minutes  💰 Cost: AUD 0.5<br>
+                      📍<a
+                        href="https://jp.translink.com.au/plan-your-journey/journey-planner?searchDate=2025-10-10&searchTime=5%3A05pm&startLocationId=ST%3Aplace_cavsta&start=Cavill+Avenue+station&endLocationId=ST%3Aplace_surstn&end=Surfers+Paradise+station&timeSearchMode=LeaveAfter&maximumWalkingDistance=4000&walkingSpeed=Normal&fareTypes=Free&fareTypes=Prepaid&fareTypes=Standard&serviceTypes=Express&serviceTypes=NightLink&serviceTypes=Regular&serviceTypes=School&transportModes=Bus&transportModes=Ferry&transportModes=Train&transportModes=Tram"
+                        target="_blank" style="color: #007BFF;">View Translink Journey Planner</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
 
-    <!-- <h2><b>Where to stay</b></h2>
-    <ul>
-        <li>
-            <p>
-                <b>Hotel Giotto ***</b><br>
-                <b>Address: </b>Piazzale Pontecorvo, 33 - 35121 Padova<br>
-                <b>Phone:</b> Tel. +39 049 8761845<br>
-                <b>E-mail:</b>&#160; <a href="mailto:info@hotelgiotto.com">info@hotelgiotto.com</a><br>
-                <b>Web:</b>&#160;  <a href="http://www.hotelgiotto.com/" title="http://www.hotelgiotto.com/">http://www.hotelgiotto.com/</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <b>Hotel Majestic Toscanelli ****</b><br>
-                <b>Address: </b>Via dell'Arco, 2 - 35122 Padova<br>
-                <b>Phone:</b> Tel. +39 049 663244<br>
-                <b>E-mail:</b>&#160; <a href="mailto:majestic@toscanelli.com">majestic@toscanelli.com</a><br>
-                <b>Web:</b>&#160;  <a href="http://www.toscanelli.com/" title="http://www.toscanelli.com/">http://www.toscanelli.com/</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <b>Hotel Igea ***</b><br>
-                <b>Address: </b>Via Ospedale, 87 - 35128 Padova<br>
-                <b>Phone:</b>&#160; Tel. + 39 049 8750577<br>
-                <b>E-Mail: </b> <a href="mailto:info@hoteligea.it">info@hoteligea.it</a><br>
-                <b>Web:&#160; </b><a href="http://www.hoteligea.it/" title="http://www.hoteligea.it/">http://www.hoteligea.it/</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>Palazzo Bovio</strong> <br>
-                <b>Address: </b>Via Belludi, 37 - 35123 Padova<br>
-                <b>Phone:</b> Tel. +39 342 1452381<br>
-                <b>E-mail: </b><a href="mailto:info@palazzobovio.com"> info@palazzobovio.com</a><br>
-                <b>Web: </b><a href="https://www.palazzobovio.com/" title="https://www.palazzobovio.com/">https://www.palazzobovio.com/</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>Hotel Casa del Pellegrino **</strong> <br>
-                <b>Address: </b>Via M. Cesarotti, 21 - 35123 Padova<br>
-                <b>Phone: </b>Tel. +39 049 8239711<br>
-                <b>E-Mail: </b><a href="mailto:info@casadelpellegrino.com">info@casadelpellegrino.com</a><br>
-                <b>Web: </b><a href="http://www.casadelpellegrino.com/" title="http://www.casadelpellegrino.com/">http://www.casadelpellegrino.com/</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                <strong>Hotel Eden **</strong> <br>
-                <b>Address: </b>Via C. Battisti, 255 - 35121 Padova<br>
-                <b>Phone: </b>Tel. +39 049 650484<br>
-                <b>E-Mail: </b><a href="mailto:info@hoteledenpadova.it">info@hoteledenpadova.it</a> <br>
-                <b>Web: </b><a href="http://www.hoteledenpadova.it/" title="http://www.hoteledenpadova.it/">http://www.hoteledenpadova.it/</a>
-            </p>
-        </li>
-    </ul> 
-        </div>
-      </div>
-      
-    </div>
+              <h3 id="seaworldconfcenter"><b>How to reach Sea World Resort Conference Centre</b></h3>
+              <img src="images/seaworld.png" alt="Sea World Theme Park & Dinner Venue" style="width: 100%;">
 
-          <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
-      <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
-              <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
-      <div style="display: flex; align-items: center; justify-content: center;">
-                <figure style="margin-right: 20px;">
-                <a href="https://www.unipd.it/" target="_blank">
-                <img src="images/logo_unipd.png"  class="img-responsive" alt="polyu" style="max-width: 400px;">
-                </a>
-                </figure>
-                <figure style="margin-right: 20px;">
-                  <a href="https://www.math.unipd.it/" target="_blank">
-                  <img src="images/mathunipd.jpg"  class="img-responsive" alt="polyu" style="max-width: 300px;">
-                  </a>
-                  </figure>
+              <h2><b>Where to stay</b></h2>
+              <ul>
+                <li>
+                  <p>
+                    <b>Hotel Giotto ***</b><br>
+                    <b>Address: </b>Piazzale Pontecorvo, 33 - 35121 Padova<br>
+                    <b>Phone:</b> Tel. +39 049 8761845<br>
+                    <b>E-mail:</b>&#160; <a href="mailto:info@hotelgiotto.com">info@hotelgiotto.com</a><br>
+                    <b>Web:</b>&#160; <a href="http://www.hotelgiotto.com/"
+                      title="http://www.hotelgiotto.com/">http://www.hotelgiotto.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Hotel Majestic Toscanelli ****</b><br>
+                    <b>Address: </b>Via dell'Arco, 2 - 35122 Padova<br>
+                    <b>Phone:</b> Tel. +39 049 663244<br>
+                    <b>E-mail:</b>&#160; <a href="mailto:majestic@toscanelli.com">majestic@toscanelli.com</a><br>
+                    <b>Web:</b>&#160; <a href="http://www.toscanelli.com/"
+                      title="http://www.toscanelli.com/">http://www.toscanelli.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <b>Hotel Igea ***</b><br>
+                    <b>Address: </b>Via Ospedale, 87 - 35128 Padova<br>
+                    <b>Phone:</b>&#160; Tel. + 39 049 8750577<br>
+                    <b>E-Mail: </b> <a href="mailto:info@hoteligea.it">info@hoteligea.it</a><br>
+                    <b>Web:&#160; </b><a href="http://www.hoteligea.it/"
+                      title="http://www.hoteligea.it/">http://www.hoteligea.it/</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Palazzo Bovio</strong> <br>
+                    <b>Address: </b>Via Belludi, 37 - 35123 Padova<br>
+                    <b>Phone:</b> Tel. +39 342 1452381<br>
+                    <b>E-mail: </b><a href="mailto:info@palazzobovio.com"> info@palazzobovio.com</a><br>
+                    <b>Web: </b><a href="https://www.palazzobovio.com/"
+                      title="https://www.palazzobovio.com/">https://www.palazzobovio.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Hotel Casa del Pellegrino **</strong> <br>
+                    <b>Address: </b>Via M. Cesarotti, 21 - 35123 Padova<br>
+                    <b>Phone: </b>Tel. +39 049 8239711<br>
+                    <b>E-Mail: </b><a href="mailto:info@casadelpellegrino.com">info@casadelpellegrino.com</a><br>
+                    <b>Web: </b><a href="http://www.casadelpellegrino.com/"
+                      title="http://www.casadelpellegrino.com/">http://www.casadelpellegrino.com/</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Hotel Eden **</strong> <br>
+                    <b>Address: </b>Via C. Battisti, 255 - 35121 Padova<br>
+                    <b>Phone: </b>Tel. +39 049 650484<br>
+                    <b>E-Mail: </b><a href="mailto:info@hoteledenpadova.it">info@hoteledenpadova.it</a> <br>
+                    <b>Web: </b><a href="http://www.hoteledenpadova.it/"
+                      title="http://www.hoteledenpadova.it/">http://www.hoteledenpadova.it/</a>
+                  </p>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
+        </div>
+
+        <div style="height:20px;" aria-hidden="true" class="wp-block-spacer"></div>
+        <div style="font-family:Raleway; color:#024852; margin:0 auto 0 auto; width:100%; text-align:center;">
+          <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Organized by</u></p><br>
+          <div style="display: flex; align-items: center; justify-content: center;">
+            <figure style="margin-right: 20px;">
+              <a href="https://www.unipd.it/" target="_blank">
+                <img src="images/logo_unipd.png" class="img-responsive" alt="polyu" style="max-width: 400px;">
+              </a>
+            </figure>
+            <figure style="margin-right: 20px;">
+              <a href="https://www.math.unipd.it/" target="_blank">
+                <img src="images/mathunipd.jpg" class="img-responsive" alt="polyu" style="max-width: 300px;">
+              </a>
+            </figure>
+          </div>
+
+          <p style="font-weight:bold; font-size:26px; text-align:center;"><u>Sponsors</u></p><br>
 
           <p style="font-weight:bold; font-size:24px; text-align:center;">Diamond </p>
 
-           <div style="display: flex; justify-content: center;">
+          <div style="display: flex; justify-content: center;">
             <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
               <a href="https://www.kaust.edu.sa/" target="_blank">
-              <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%;">
+                <img src="images/KAUST.jpeg" alt="KAUST" style="max-width: 100%;">
               </a>
             </div>
           </div>
@@ -256,78 +286,32 @@
           <p style="font-weight:bold; font-size:24px; text-align:center;">Platinum </p>
 
           <div style="display: flex; justify-content: center;">
-           <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
-             <a href="https://www.google.com/" target="_blank">
-             <img src="images/Google-Logo.png" alt="Google" style="max-width: 100%;">
-             </a>
-           </div>
-         </div> 
-      </div>
+            <div style="display: inline-block; width: 17%; box-sizing: border-box; padding: 10px; ">
+              <a href="https://www.google.com/" target="_blank">
+                <img src="images/Google-Logo.png" alt="Google" style="max-width: 100%;">
+              </a>
+            </div>
+          </div>
+        </div>
         <hr /> -->
+
       </div>
 
-<script>
-    function toTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-    </script>
+      <!-- Footer Template Placeholder -->
+      <div id="footer-placeholder"></div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 footer-section">
-          <h4>RAID 2026</h4>
-          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
-          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Organized By</h4>
-          <p>Lancaster University</p>
-          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
-          <p>Email: <a href="mailto:TBD">TBD</a></p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="call.html">Call for Papers</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="venue.html">Venue & Travel</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 RAID. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+      <script>
+        function toTop() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
 
-  <script>
-    //Get the button
-    var mybutton = document.getElementById("myBtn");
-    var rootElement = document.documentElement;
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
-    }
-	// Allowed pages list
+      <!-- External JavaScript files -->
+      <script src="js/template-loader.js"></script>
+      <script src="js/navigation.js"></script>
+      <script>
+        // Allowed pages list
         const allowedPages = [
           "index.html",
           "committees.html",
@@ -339,36 +323,14 @@
           "accepted_open.html",
           "program.html",
           "awards.html"
-	      
-      ];
-      // Extract the current page name from the URL
-      const currentPage = window.location.pathname.split("/").pop();
-
-      // Redirect to index.html if the current page is not in the allowed list
-      if (!allowedPages.includes(currentPage) && currentPage !== "") {
+        ];
+        // Extract the current page name from the URL
+        const currentPage = window.location.pathname.split("/").pop();
+        // Redirect to index.html if the current page is not in the allowed list
+        if (!allowedPages.includes(currentPage) && currentPage !== "") {
           window.location.href = "https://raid2026.sptagelab.org/index.html";
-      }
-  </script>
-
-
+        }
+      </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

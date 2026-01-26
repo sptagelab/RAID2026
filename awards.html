@@ -19,6 +19,9 @@
 
   <button onclick="topFunction()" id="myBtn"><span class="glyphicon glyphicon-chevron-up"></button>
 
+  <!-- Header Template Placeholder -->
+  <div id="header-placeholder"></div>
+
   <div>
     <div class="container-fluid">
       <div class="hero text-center">
@@ -45,6 +48,7 @@
         </div>
 
         <div class="cta-buttons">
+        <a class="btn btn-raid-outline" href="index.html">Home</a>
         <a class="btn btn-raid-outline" href="call.html">Call for Papers</a>
         <a class="btn btn-raid-outline" href="call_poster.html">Call for Posters</a>
         <a class="btn btn-raid-outline" href="venue.html">Venue & Travel</a>
@@ -93,82 +97,30 @@
 
     </div>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 footer-section">
-          <h4>RAID 2026</h4>
-          <p>The 29th International Symposium on<br>Research in Attacks, Intrusions and Defenses</p>
-          <p>October 11-14, 2026<br>Lancaster, United Kingdom</p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Organized By</h4>
-          <p>Lancaster University</p>
-          <p style="margin-top: 15px;"><strong>Contact:</strong></p>
-          <p>Email: <a href="mailto:TBD">TBD</a></p>
-        </div>
-        <div class="col-md-4 footer-section">
-          <h4>Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="call.html">Call for Papers</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="venue.html">Venue & Travel</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 RAID. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <!-- Footer Template Placeholder -->
+  <div id="footer-placeholder"></div>
 
+    <!-- External JavaScript files -->
+    <script src="js/template-loader.js"></script>
+    <script src="js/navigation.js"></script>
     <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-      var rootElement = document.documentElement;
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        rootElement.scrollTo({
-          top: 0,
-          behavior: "smooth"
-        })
-      }
-          // Allowed pages list
       const allowedPages = [
-          "index.html",
-          "committees.html",
-          "contact.html",
-          "call.html",
-          "call_poster.html",
-          "venue.html",
-          "registration.html",
-          "accepted_open.html",
-          "program.html",
-          "awards.html"
+        "index.html",
+        "committees.html",
+        "contact.html",
+        "call.html",
+        "call_poster.html",
+        "venue.html",
+        "registration.html",
+        "accepted_open.html",
+        "program.html",
+        "awards.html"
       ];
-
-      // Extract the current page name from the URL
       const currentPage = window.location.pathname.split("/").pop();
-
-      // Redirect to index.html if the current page is not in the allowed list
       if (!allowedPages.includes(currentPage) && currentPage !== "") {
-          window.location.href = "https://raid2026.sptagelab.org/index.html";
+        window.location.href = "https://raid2026.sptagelab.org/index.html";
       }
-      </script>
+    </script>
 
 </body>
 </html>
